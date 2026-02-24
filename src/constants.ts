@@ -18,8 +18,9 @@ export const NEWS_DATA: NewsItem[] = [
   {
     id: '1',
     date: '2026-03-01',
-    title: 'Welcome new members!',
-    content: 'We are excited to welcome new students to our research group this semester.'
+    title: 'Recruiting new members!',
+    content: 'We are looking for undergraduate interns, graduate students, and postdoctoral researchers to work with! If you are interested, please send your CV and GPA to professor. 
+.'
   }
 ];
 
