@@ -1,6 +1,7 @@
 import { NewsItem, Publication, Project, Member } from './types';
 
 export const NEWS_DATA: NewsItem[] = [
+ /*
   {
     id: '1',
     date: '2024-02-20',
@@ -13,31 +14,32 @@ export const NEWS_DATA: NewsItem[] = [
     title: 'New Research Grant Awarded',
     content: 'The lab has received a major research grant from the National Science Foundation.'
   },
+  */
   {
-    id: '3',
-    date: '2023-12-10',
+    id: '1',
+    date: '2026-03-01',
     title: 'Welcome new members!',
-    content: 'We are excited to welcome three new PhD students to our research group this semester.'
+    content: 'We are excited to welcome new students to our research group this semester.'
   }
 ];
 
 export const PUBLICATIONS_DATA: Publication[] = [
   {
     id: 'p1',
-    title: 'Scaling Laws for Large Language Models',
-    authors: ['John Doe', 'Jane Smith', 'Lab Member'],
-    venue: 'NeurIPS 2023',
-    year: 2023,
-    type: 'Conference',
+    title: 'Learning Confidence Measure with Transformer in Stereo Matching',
+    authors: ['Jini Yang', 'Minjung Yoo', 'Jaehoon Cho', 'Sunok Kim'],
+    venue: 'Pattern Recognition (PR)',
+    year: 2025,
+    type: 'Journal',
     link: '#'
   },
   {
     id: 'p2',
-    title: 'A Survey of Generative AI in Healthcare',
-    authors: ['Lab Member', 'Alice Brown'],
-    venue: 'Nature Machine Intelligence',
-    year: 2024,
-    type: 'Journal',
+    title: 'A Prototype Unit for Image De-raining using Time-Lapse Data',
+    authors: ['Jaehoon Cho', 'Jini Yang', 'Minjung Yoo', 'Sunok Kim'],
+    venue: 'British Machine Vision Conference (BMVC)',
+    year: 2024 (Nov),
+    type: 'Conference',
     link: '#'
   },
   {
