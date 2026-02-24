@@ -128,7 +128,6 @@ export default function App() {
               <h4 className="text-white font-medium mb-4">Contact</h4>
               <p className="text-sm">#210, Electronics Building</p>
               <p className="text-sm">76 Hanggongdaehang-ro, Deogyang-gu, Goyang, Korea</p>
-              // <p className="text-sm mt-2">Email: contact@lab.university.edu</p>
             </div>
             <div>
               <h4 className="text-white font-medium mb-4">Follow Us</h4>
@@ -152,9 +151,8 @@ function AboutSection() {
   const slides = [
     //{ url: 'https://picsum.photos/seed/lab1/1920/1080', title: 'State-of-the-Art Research' },
     { url: '/photo/main2.png', title: 'Learning confidence measure with transformer in stereo matching', description: 'Jini Yang, Minjung Yoo, Jaehoon Cho, Sunok Kim\nPattern Recognition (Q1, Impact Factor: 7.5)'},
+    { url: '/photo/main3.png', title: 'A Prototype Unit for Image De-raining using Time-Lapse Data', description: 'Jaehoon Cho, Jini Yang, Minjung Yoo, Sunok Kim\nBMVC2024'},
     { url: '/photo/main1.png', title: 'Multi-task Learning for Real-time Autonomous Driving Leveraging Task-adaptive Attention Generator', description: 'Wonhyeok Choi, Mingyu Shin, HYUKZAE LEE, Jaehoon Cho, Jaehyeon Park, Sunghoon Im\nICRA2024'},
-    { url: 'https://picsum.photos/seed/lab2/1920/1080', title: 'Collaborative Environment' },
-    { url: 'https://picsum.photos/seed/lab3/1920/1080', title: 'Innovation in Action' },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
