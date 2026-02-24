@@ -1,6 +1,7 @@
 import { NewsItem, Publication, Project, Member } from './types';
 
 export const NEWS_DATA: NewsItem[] = [
+  /*
   {
     id: '1',
     date: '2024-02-20',
@@ -13,8 +14,9 @@ export const NEWS_DATA: NewsItem[] = [
     title: 'New Research Grant Awarded',
     content: 'The lab has received a major research grant from the National Science Foundation.'
   },
+  */
   {
-    id: '3',
+    id: '1',
     date: '2026-03-01',
     title: 'Welcome new members!',
     content: 'We are excited to welcome new students to our research group this semester.'
@@ -36,7 +38,7 @@ export const PUBLICATIONS_DATA: Publication[] = [
     title: 'A Prototype Unit for Image De-raining using Time-Lapse Data',
     authors: ['Jaehoon Cho', 'Jini Yang', 'Minjung Yoo', 'Sunok Kim'],
     venue: 'British Machine Vision Conference (BMVC)',
-    year: 2024 (Nov),
+    year: 2024,
     type: 'Conference',
     link: '#'
   },
