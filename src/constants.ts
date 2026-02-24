@@ -19,8 +19,7 @@ export const NEWS_DATA: NewsItem[] = [
     id: '1',
     date: '2026-03-01',
     title: 'Recruiting new members!',
-    content: 'We are looking for undergraduate interns, graduate students, and postdoctoral researchers to work with! If you are interested, please send your CV and GPA to professor. 
-.'
+    content: 'We are looking for undergraduate interns, graduate students, and postdoctoral researchers to work with! If you are interested, please send your CV and GPA to the professor.'
   }
 ];
 
