@@ -14,7 +14,7 @@ export const NEWS_DATA: NewsItem[] = [
     content: 'The lab has received a major research grant from the National Science Foundation.'
   },
   {
-    id: '1',
+    id: '3',
     date: '2026-03-01',
     title: 'Welcome new members!',
     content: 'We are excited to welcome new students to our research group this semester.'
