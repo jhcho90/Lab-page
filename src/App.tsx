@@ -198,8 +198,7 @@ function AboutSection() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.7 }}
                   className="text-lg md:text-xl font-light max-w-2xl mx-auto"
-                >
-                  //Pushing the boundaries of knowledge through interdisciplinary excellence.
+                >                
                   {slides[currentSlide].description}
                 </motion.p>
               </div>
