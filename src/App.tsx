@@ -151,7 +151,7 @@ export default function App() {
 function AboutSection() {
   const slides = [
     //{ url: 'https://picsum.photos/seed/lab1/1920/1080', title: 'State-of-the-Art Research' },
-    { url: '/photo/main1.png'},
+    { url: '/photo/main2.png', title: 'Learning confidence measure with transformer in stereo matching'},
     { url: 'https://picsum.photos/seed/lab2/1920/1080', title: 'Collaborative Environment' },
     { url: 'https://picsum.photos/seed/lab3/1920/1080', title: 'Innovation in Action' },
   ];
