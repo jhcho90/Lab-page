@@ -93,20 +93,18 @@ export const MEMBERS_DATA: Member[] = [
     role: 'Faculty',
     category: 'Faculty',
     imageUrl: '/photo/sihyun_jhc.jpg',
-    description: 'Director of the AVIS Lab. Research interests include Deep Learning, Computer Vision, and Robotics.',
+    description: 'Director of the AIMS Lab. Research interests include Deep Learning, Computer Vision, and Robotics.',
     email: 'jh.cho@kau.ac.kr',
     website: 'https://jhcho90.github.io/'
   },
   {
     id: 'm2',
-    name: 'David Chen',
-    role: 'PhD Student',
+    name: 'This could be you!',
+    role: 'Master Student',
     category: 'Students',
-    imageUrl: 'https://picsum.photos/seed/std1/400/400',
-    description: 'Focusing on Large Language Models and their applications in software engineering.',
-    email: 'david.c@university.edu',
-    website: 'https://example.com/david-chen'
+    imageUrl: '/photo/you.png',
   },
+  /*
   {
     id: 'm3',
     name: 'Emily Wong',
@@ -127,4 +125,5 @@ export const MEMBERS_DATA: Member[] = [
     email: 'michael.r@university.edu',
     website: 'https://example.com/michael-ross'
   }
+  */
 ];
