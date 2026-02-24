@@ -39,7 +39,7 @@ export default function App() {
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveSection('About')}>
               <div className="w-8 h-8 bg-zinc-900 rounded-lg flex items-center justify-center text-white font-bold">A</div>
               <div className="flex flex-col leading-tight">
-                <span className="font-display text-lg font-bold tracking-tight">AVIS Lab</span>
+                <span className="font-display text-lg font-bold tracking-tight">AIMS Lab</span>
                 <span className="text-[10px] text-zinc-500 font-medium hidden lg:block">Autonomous Intelligence & Mobility Systems Laboratory</span>
               </div>
             </div>
@@ -119,16 +119,16 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-white font-display text-lg font-bold mb-4">AVIS Lab</h3>
+              <h3 className="text-white font-display text-lg font-bold mb-4">AIMS Lab</h3>
               <p className="text-sm leading-relaxed">
                 Autonomous Intelligence & Mobility Systems Laboratory. Advancing the frontiers of physical AI and next-generation mobility through rigorous research and high-performance system integration.
               </p>
             </div>
             <div>
               <h4 className="text-white font-medium mb-4">Contact</h4>
-              <p className="text-sm">123 University Ave, Science Building</p>
-              <p className="text-sm">City, State 12345</p>
-              <p className="text-sm mt-2">Email: contact@lab.university.edu</p>
+              <p className="text-sm">#210, Electronics Building</p>
+              <p className="text-sm">76 Hanggongdaehang-ro, Deogyang-gu, Goyang, Korea</p>
+              // <p className="text-sm mt-2">Email: contact@lab.university.edu</p>
             </div>
             <div>
               <h4 className="text-white font-medium mb-4">Follow Us</h4>
@@ -139,7 +139,7 @@ export default function App() {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-zinc-800 text-xs text-center">
-            &copy; {new Date().getFullYear()} AVIS Lab. All rights reserved.
+            &copy; {new Date().getFullYear()} AIMS Lab. All rights reserved.
           </div>
         </div>
       </footer>
@@ -151,7 +151,8 @@ export default function App() {
 function AboutSection() {
   const slides = [
     //{ url: 'https://picsum.photos/seed/lab1/1920/1080', title: 'State-of-the-Art Research' },
-    { url: '/photo/main2.png', title: 'Learning confidence measure with transformer in stereo matching', description: 'Jini Yang, Minjung Yoo, Jaehoon Cho, Sunok Kim \nPattern Recognition (Q1, Impact Factor: 7.5)'},
+    { url: '/photo/main2.png', title: 'Learning confidence measure with transformer in stereo matching', description: 'Jini Yang, Minjung Yoo, Jaehoon Cho, Sunok Kim\nPattern Recognition (Q1, Impact Factor: 7.5)'},
+    { url: '/photo/main1.png', title: 'Multi-task Learning for Real-time Autonomous Driving Leveraging Task-adaptive Attention Generator', description: 'Wonhyeok Choi, Mingyu Shin, HYUKZAE LEE, Jaehoon Cho, Jaehyeon Park, Sunghoon Im\nICRA2024'},
     { url: 'https://picsum.photos/seed/lab2/1920/1080', title: 'Collaborative Environment' },
     { url: 'https://picsum.photos/seed/lab3/1920/1080', title: 'Innovation in Action' },
   ];
@@ -197,7 +198,7 @@ function AboutSection() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.7 }}
-                  className="text-lg md:text-xl font-light max-w-2xl mx-auto"
+                  className="text-lg md:text-xl font-light max-w-2xl mx-auto whitespace-pre-wrap"
                 >                
                   {slides[currentSlide].description}
                 </motion.p>
