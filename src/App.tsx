@@ -40,10 +40,10 @@ export default function App() {
               <div className="w-8 h-8 bg-zinc-900 rounded-lg flex items-center justify-center text-white font-bold">A</div>
               <div className="flex flex-col leading-tight">
                 <span className="font-display text-lg font-bold tracking-tight">AVIS Lab</span>
-                <span className="text-[10px] text-zinc-500 font-medium hidden lg:block">Autonomous Vision & Intelligent Systems</span>
+                <span className="text-[10px] text-zinc-500 font-medium hidden lg:block">Autonomous Intelligence & Mobility Systems Laboratory</span>
               </div>
             </div>
-
+            
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               {(['About', 'Publications', 'Projects', 'Members'] as Section[]).map((section) => (
@@ -121,7 +121,7 @@ export default function App() {
             <div>
               <h3 className="text-white font-display text-lg font-bold mb-4">AVIS Lab</h3>
               <p className="text-sm leading-relaxed">
-                Autonomous Vision & Intelligent Systems Laboratory. Advancing the frontiers of artificial intelligence and human-computer interaction through rigorous research and innovative systems.
+                Autonomous Intelligence & Mobility Systems Laboratory. Advancing the frontiers of physical AI and next-generation mobility through rigorous research and high-performance system integration.
               </p>
             </div>
             <div>
