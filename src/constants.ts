@@ -87,13 +87,13 @@ export const PROJECTS_DATA: Project[] = [
 export const MEMBERS_DATA: Member[] = [
   {
     id: 'm1',
-    name: 'Prof. Sarah Johnson',
+    name: 'Prof. Jaehoon Cho',
     role: 'Faculty',
     category: 'Faculty',
     imageUrl: 'https://picsum.photos/seed/prof/400/400',
     description: 'Director of the AVIS Lab. Research interests include Deep Learning, Computer Vision, and Robotics.',
-    email: 'sarah.j@university.edu',
-    website: 'https://example.com/sarah-johnson'
+    email: 'jh.cho@kau.ack.r',
+    website: 'https://jhcho90.github.io/'
   },
   {
     id: 'm2',
