@@ -1,7 +1,6 @@
 import { NewsItem, Publication, Project, Member } from './types';
 
 export const NEWS_DATA: NewsItem[] = [
- /*
   {
     id: '1',
     date: '2024-02-20',
@@ -14,7 +13,6 @@ export const NEWS_DATA: NewsItem[] = [
     title: 'New Research Grant Awarded',
     content: 'The lab has received a major research grant from the National Science Foundation.'
   },
-  */
   {
     id: '1',
     date: '2026-03-01',
