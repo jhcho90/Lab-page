@@ -18,6 +18,14 @@ export interface Publication {
   pdfUrl?: string;
 }
 
+export interface Research {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  status: 'Ongoing' | 'Completed';
+}
+
 export interface Project {
   id: string;
   title: string;
