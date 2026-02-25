@@ -62,6 +62,31 @@ export const PUBLICATIONS_DATA: Publication[] = [
   }
 ];
 
+
+export const RESEARCH_DATA: Project[] = [
+  {
+    id: 'proj1',
+    title: '200M RGB+D Dataset Construction',
+    description: '200M indoor & outdoor real-world dataset construction.',
+    imageUrl: '/photo/Dataset.jpg',
+    status: 'Ongoing' // 주석을 풀고 값을 넣어주세요
+  },
+  {
+    id: 'proj2',
+    title: 'VLM-based VQA for Driving Scenarios',
+    description: 'Vision Language Model (VLM) based Visual Question Answering (VQA) for various driving scenarios.',
+    imageUrl: '/photo/VQA.jpg',
+    status: 'Ongoing'
+  },
+  {
+    id: 'proj3',
+    title: 'Multi-sensor System Fusion',
+    description: 'Multi-Sensor Fusion with Unified BEVB Representation.',
+    imageUrl: '/photo/BEV.jpg',
+    status: 'Completed'
+  }
+];
+
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'proj1',
@@ -87,29 +112,6 @@ export const PROJECTS_DATA: Project[] = [
 ];
 
 
-export const RESEARCH_DATA: Project[] = [
-  {
-    id: 'proj1',
-    title: '200M RGB+D Dataset Construction',
-    description: '200M indoor & outdoor real-world dataset construction.',
-    imageUrl: '/photo/Dataset.jpg'
-    // status: 'Ongoing'
-  },
-  {
-    id: 'proj2',
-    title: 'VLM-based VQA for Driving Scenarios',
-    description: 'Vision Language Model (VLM) based Visual Question Answering (VQA) for various driving scenarios.',
-    imageUrl: '/photo/VQA.jpg'
-    // status: 'Ongoing'
-  },
-  {
-    id: 'proj3',
-    title: 'Multi-sensor System Fusion',
-    description: 'Multi-Sensor Fusion with Unified BEVB Representation.',
-    imageUrl: '/photo/BEV.jpg'
-    // status: 'Completed'
-  }
-];
 
 
 export const MEMBERS_DATA: Member[] = [
