@@ -67,24 +67,32 @@ export const RESEARCH_DATA: Project[] = [
   {
     id: 'proj1',
     title: '200M RGB+D Dataset Construction',
-    description: '200M indoor & outdoor real-world dataset construction.',
+    description: 'Constructing a large-scale indoor and outdoor RGB+D dataset with 200 million samples to enhance depth estimation and 3D scene understanding in diverse environments.',
     imageUrl: '/photo/Dataset.jpg',
-    status: 'Ongoing',
+    status: 'Completed',
     link: 'https://dimlrgbd.github.io/'
   },
   {
     id: 'proj2',
     title: 'VLM-based VQA for Driving Scenarios',
-    description: 'Vision Language Model (VLM) based Visual Question Answering (VQA) for various driving scenarios.',
+    description: 'Developing a Vision-Language Model (VLM) for Visual Question Answering (VQA) to improve situational awareness and decision-making in complex autonomous driving scenarios.',    
     imageUrl: '/photo/VQA.jpg',
     status: 'Ongoing'
   },
   {
     id: 'proj3',
     title: 'Multi-sensor System Fusion',
-    description: 'Multi-Sensor Fusion with Unified BEVB Representation.',
+    description: 'Implementing a robust multi-sensor fusion framework utilizing Unified BEV (Bird’s Eye View) representations to integrate LiDAR, Radar, and camera data for precise perception.',
     imageUrl: '/photo/BEV.jpg',
-    status: 'Completed'
+    status: 'Ongoing'
+  },
+  {
+    id: 'proj4',
+    title: 'Feature-based Knowledge Distillation',
+    description: 'Developing an advanced knowledge distillation framework that transfers rich hierarchical features from CNN-based teacher models to lightweight Transformer-based student models.',
+    imageUrl: '/photo/KD.jpg',
+    status: 'Ongoing',
+    link: '#'
   }
 ];
 
