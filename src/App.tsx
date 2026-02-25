@@ -20,11 +20,11 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import { NEWS_DATA, PUBLICATIONS_DATA, PROJECTS_DATA, MEMBERS_DATA } from './constants';
+import { NEWS_DATA, PUBLICATIONS_DATA, RESEARCH_DATA, PROJECTS_DATA, MEMBERS_DATA } from './constants';
 import { PublicationType } from './types';
 import ChatBot from './components/ChatBot';
 
-type Section = 'About' | 'Publications' | 'Projects' | 'Members';
+type Section = 'About' | 'Publications' | 'Research' | 'Projects' |'Members';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<Section>('About');
@@ -46,7 +46,7 @@ export default function App() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {(['About', 'Publications', 'Projects', 'Members'] as Section[]).map((section) => (
+              {(['About', 'Publications', 'Research', 'Projects', 'Members'] as Section[]).map((section) => (
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
@@ -78,7 +78,7 @@ export default function App() {
               className="md:hidden bg-white border-t border-zinc-100 overflow-hidden"
             >
               <div className="px-4 py-4 space-y-4">
-                {(['About', 'Publications', 'Projects', 'Members'] as Section[]).map((section) => (
+                {(['About', 'Publications', 'Research', 'Projects', 'Members'] as Section[]).map((section) => (
                   <button
                     key={section}
                     onClick={() => {
@@ -108,6 +108,7 @@ export default function App() {
           >
             {activeSection === 'About' && <AboutSection />}
             {activeSection === 'Publications' && <PublicationsSection />}
+            {activeSection === 'Research' && <ResearchSection />}
             {activeSection === 'Projects' && <ProjectsSection />}
             {activeSection === 'Members' && <MembersSection />}
           </motion.div>
@@ -408,6 +409,56 @@ function PublicationsSection() {
     </div>
   );
 }
+
+function ResearchSection() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mb-12">
+        <h1 className="text-4xl font-display font-bold mb-4">Research Research</h1>
+        <p className="text-zinc-500 max-w-2xl">
+          Exploring diverse domains from fundamental machine learning theory to practical robotic systems.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {Research_DATA.map((project) => (
+          <div key={project.id} className="group bg-white rounded-3xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="relative h-64 overflow-hidden">
+              <img 
+                src={project.imageUrl} 
+                alt={project.title}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute top-4 right-4">
+                <span className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${
+                  project.status === 'Ongoing' ? 'bg-emerald-500 text-white' : 'bg-zinc-500 text-white'
+                }`}>
+                  {project.status}
+                </span>
+              </div>
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-display font-bold mb-4 group-hover:text-zinc-600 transition-colors">{project.title}</h3>
+              <p className="text-zinc-600 text-sm leading-relaxed mb-6">
+                {project.description}
+              </p>
+              <a 
+                href="#" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
+              >
+                Learn More <ChevronRight size={14} className="ml-1" />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 
 function ProjectsSection() {
   return (
