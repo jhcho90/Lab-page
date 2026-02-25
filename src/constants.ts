@@ -29,7 +29,7 @@ export const PUBLICATIONS_DATA: Publication[] = [
     title: 'Learning Confidence Measure with Transformer in Stereo Matching',
     authors: ['Jini Yang', 'Minjung Yoo', 'Jaehoon Cho', 'Sunok Kim'],
     venue: 'Pattern Recognition (PR)',
-    year: 2025,
+    year: 2024,
     type: 'Journal',
     link: '#'
   },
@@ -44,20 +44,83 @@ export const PUBLICATIONS_DATA: Publication[] = [
   },
   {
     id: 'p3',
-    title: 'Efficient Training of Vision Transformers',
-    authors: ['Bob Wilson', 'Lab Member'],
-    venue: 'arXiv',
+    title: 'Improving Image de-raining using Reference-guided Transformers',
+    authors: ['Zihao Ye', 'Jaehoon Cho', 'Changjae Oh'],
+    venue: 'IEEE International Conference on Image Processing (ICIP)',
     year: 2024,
-    type: 'Preprint',
+    type: 'Conference',
     link: '#'
   },
   {
     id: 'p4',
-    title: 'Robust Reinforcement Learning in Dynamic Environments',
-    authors: ['Jane Smith', 'Lab Member'],
-    venue: 'ICML Workshop on Robustness',
-    year: 2023,
-    type: 'Workshop',
+    title: 'Multi-task Learning for Real-time Autonomous Driving Leveraging Task-adaptive Attention Generator',
+    authors: ['Wonhyeok Choi', 'Mingyu Shin', 'HYUKZAE LEE', 'Jaehoon Cho', 'Jaehyeon Park', 'Sunghoon Im'],
+    venue: 'IEEE International Conference on Robotics and Automation (ICRA)',
+    year: 2024,
+    type: 'Conference',
+    link: '#'
+  },
+  {
+    id: 'p5',
+    title: 'Memory-Guided Image De-Raining Using Time-Lapse Data',
+    authors: ['Jaehoon Cho', 'Seungryong Kim', 'Kwanghoon Sohn'],
+    venue: 'IEEE Transactions on Image Processing (TIP)',
+    year: 2022,
+    type: 'Journal',
+    link: '#'
+  },
+  {
+    id: 'p6',
+    title: 'Wide and Narrow: Video Prediction from Context and Motion',
+    authors: ['Jaehoon Cho', 'Jiyoung Lee', 'Changjae Oh', 'Wonil Song', 'Kwanghoon Sohn'],
+    venue: 'British Machine Vision Conference (BMVC)',
+    year: 2021,
+    type: 'Conference',
+    link: '#'
+  },
+  {
+    id: 'p7',
+    title: 'Deep Monocular Depth Estimation Leveraging a Large-scale Outdoor Stereo Dataset',
+    authors: ['Jaehoon Cho', 'Dongbo Min', 'Youngjung Kim', 'Kwanghoon Sohn'],
+    venue: 'Expert Systems With Applications (ESWA)',
+    year: 2021,
+    type: 'Journal',
+    link: '#'
+  },
+  {
+    id: 'p8',
+    title: 'Pyramid Inter-Attention for High Dynamic Range Imaging',
+    authors: ['Sungil Choi', 'Jaehoon Cho', 'Wonil Song', 'Jihwan Choe', 'Jisung Yoo', 'Kwanghoon Sohn'],
+    venue: 'Sensors',
+    year: 2021,
+    type: 'Journal',
+    link: '#'
+  },
+  {
+    id: 'p9',
+    title: 'Single Image Deraining Using Time-lapse Data',
+    authors: ['Jaehoon Cho', 'Seungryong Kim', 'Dongbo Min', 'Kwanghoon Sohn'],
+    venue: 'IEEE Transactions on Image Processing (TIP)',
+    year: 2020,
+    type: 'Journal',
+    link: '#'
+  },
+  {
+    id: 'p10',
+    title: 'Multi-Task Self-Supervised Visual Representation Learning for Monocular Road Segmentation',
+    authors: ['Jaehoon Cho', 'Youngjung Kim', 'Changjae Oh', 'Kwanghoon Sohn'],
+    venue: 'IEEE International Conference on Multimedia and Expo (ICME)',
+    year: 2018,
+    type: 'Conference',
+    link: '#'
+  },
+  {
+    id: 'p11',
+    title: 'DIML/CVL RGB-D Dataset: 2M RGB-D Images of Natural Indoor and Outdoor Scenes',
+    authors: ['Jaehoon Cho', 'Dongbo Min', 'Youngjung Kim', 'Kwanghoon Sohn'],
+    venue: 'arXiv',
+    year: 2021,
+    type: 'Preprint',
     link: '#'
   }
 ];
