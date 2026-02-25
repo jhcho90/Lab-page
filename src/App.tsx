@@ -414,14 +414,15 @@ function ResearchSection() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="mb-12">
-        <h1 className="text-4xl font-display font-bold mb-4">Research Research</h1>
+        <h1 className="text-4xl font-display font-bold mb-4">Research</h1> {/* Research Research 중복 수정 */}
         <p className="text-zinc-500 max-w-2xl">
           Exploring diverse domains from fundamental machine learning theory to practical robotic systems.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {Research_DATA.map((project) => (
+        {/* Research_DATA를 RESEARCH_DATA로 변경했습니다 */}
+        {RESEARCH_DATA.map((project) => (
           <div key={project.id} className="group bg-white rounded-3xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl transition-all duration-500">
             <div className="relative h-64 overflow-hidden">
               <img 
@@ -431,11 +432,14 @@ function ResearchSection() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 right-4">
-                <span className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${
-                  project.status === 'Ongoing' ? 'bg-emerald-500 text-white' : 'bg-zinc-500 text-white'
-                }`}>
-                  {project.status}
-                </span>
+                {/* project.status가 있을 때만 렌더링되도록 안전장치를 추가했습니다 */}
+                {project.status && (
+                  <span className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${
+                    project.status === 'Ongoing' ? 'bg-emerald-500 text-white' : 'bg-zinc-500 text-white'
+                  }`}>
+                    {project.status}
+                  </span>
+                )}
               </div>
             </div>
             <div className="p-8">
@@ -445,8 +449,6 @@ function ResearchSection() {
               </p>
               <a 
                 href="#" 
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
               >
                 Learn More <ChevronRight size={14} className="ml-1" />
