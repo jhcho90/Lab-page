@@ -69,7 +69,8 @@ export const RESEARCH_DATA: Project[] = [
     title: '200M RGB+D Dataset Construction',
     description: '200M indoor & outdoor real-world dataset construction.',
     imageUrl: '/photo/Dataset.jpg',
-    status: 'Ongoing' // 주석을 풀고 값을 넣어주세요
+    status: 'Ongoing',
+    link: 'https://dimlrgbd.github.io/'
   },
   {
     id: 'proj2',
