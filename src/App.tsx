@@ -447,11 +447,13 @@ function ResearchSection() {
               <p className="text-zinc-600 text-sm leading-relaxed mb-6">
                 {project.description}
               </p>
-              <a 
-                href="#" 
-                className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
-              >
-                Learn More <ChevronRight size={14} className="ml-1" />
+             <a 
+              href={project.link || "#"} // 데이터의 link를 가져오고, 없으면 "#"
+              target="_blank"            // 새 탭에서 열기
+              rel="noopener noreferrer"  // 보안 설정
+              className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
+            >
+              Learn More <ChevronRight size={14} className="ml-1" />
               </a>
             </div>
           </div>
