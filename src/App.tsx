@@ -428,7 +428,8 @@ function ResearchSection() {
               <img 
                 src={project.imageUrl} 
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                // object-cover를 object-contain으로 바꿨습니다.
+                className="w-full h-full object-contain bg-zinc-50 transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 right-4">
