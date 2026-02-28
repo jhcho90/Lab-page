@@ -192,7 +192,7 @@ export const MEMBERS_DATA: Member[] = [
     name: 'Prof. Jaehoon Cho',
     role: 'Faculty',
     category: 'Faculty',
-    imageUrl: '/photo/sihyun_jhc.jpg',
+    imageUrl: '/photo/profile_photo.jpg',
     description: 'Director of the AIMS Lab. Research interests include Deep Learning, Computer Vision, and Robotics.',
     email: 'jh.cho@kau.ac.kr',
     website: 'https://jhcho90.github.io/'
