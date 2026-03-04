@@ -127,14 +127,7 @@ export const PUBLICATIONS_DATA: Publication[] = [
 
 
 export const RESEARCH_DATA: Project[] = [
-  {
-    id: 'proj1',
-    title: '200M RGB+D Dataset Construction',
-    description: 'Constructing a large-scale indoor and outdoor RGB+D dataset with 200 million samples to enhance depth estimation and 3D scene understanding in diverse environments.',
-    imageUrl: '/photo/Dataset.jpg',
-    status: 'Completed',
-    link: 'https://dimlrgbd.github.io/'
-  },
+
   {
     id: 'proj2',
     title: 'VLM-based VQA for Driving Scenarios',
@@ -156,31 +149,39 @@ export const RESEARCH_DATA: Project[] = [
     imageUrl: '/photo/KD.jpg',
     status: 'Ongoing',
     link: '#'
+  },
+  {
+  id: 'proj1',
+  title: '200M RGB+D Dataset Construction',
+  description: 'Constructing a large-scale indoor and outdoor RGB+D dataset with 200 million samples to enhance depth estimation and 3D scene understanding in diverse environments.',
+  imageUrl: '/photo/Dataset.jpg',
+  status: 'Completed',
+  link: 'https://dimlrgbd.github.io/'
   }
 ];
 
 export const PROJECTS_DATA: Project[] = [
-  {
-    id: 'proj1',
-    title: 'Next-Gen Autonomous Navigation',
-    description: 'Developing robust perception and planning algorithms for autonomous vehicles in complex urban environments.',
-    imageUrl: 'https://picsum.photos/seed/nav/800/600',
-    status: 'Ongoing'
-  },
-  {
-    id: 'proj2',
-    title: 'Privacy-Preserving Federated Learning',
-    description: 'Investigating new methods for training machine learning models across decentralized devices while maintaining strict data privacy.',
-    imageUrl: 'https://picsum.photos/seed/privacy/800/600',
-    status: 'Ongoing'
-  },
-  {
-    id: 'proj3',
-    title: 'Human-AI Collaborative Systems',
-    description: 'Designing interfaces and algorithms that enable seamless cooperation between humans and AI agents in creative tasks.',
-    imageUrl: 'https://picsum.photos/seed/collab/800/600',
-    status: 'Completed'
-  }
+  // {
+  //   id: 'proj1',
+  //   title: 'Next-Gen Autonomous Navigation',
+  //   description: 'Developing robust perception and planning algorithms for autonomous vehicles in complex urban environments.',
+  //   imageUrl: 'https://picsum.photos/seed/nav/800/600',
+  //   status: 'Ongoing'
+  // },
+  // {
+  //   id: 'proj2',
+  //   title: 'Privacy-Preserving Federated Learning',
+  //   description: 'Investigating new methods for training machine learning models across decentralized devices while maintaining strict data privacy.',
+  //   imageUrl: 'https://picsum.photos/seed/privacy/800/600',
+  //   status: 'Ongoing'
+  // },
+  // {
+  //   id: 'proj3',
+  //   title: 'Human-AI Collaborative Systems',
+  //   description: 'Designing interfaces and algorithms that enable seamless cooperation between humans and AI agents in creative tasks.',
+  //   imageUrl: 'https://picsum.photos/seed/collab/800/600',
+  //   status: 'Completed'
+  // }
 ];
 
 
