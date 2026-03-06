@@ -194,7 +194,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'Professor',
     category: 'Faculty',
     imageUrl: '/photo/profile_photo.jpg',
-    description: 'jh.cho (at) kau (dot) ac (dot) kr.',
+    description: 'jh.cho (at) kau (dot) ac (dot) kr',
     email: 'jh.cho@kau.ac.kr',
     website: 'https://jhcho90.github.io/'
   },
