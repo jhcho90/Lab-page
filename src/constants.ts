@@ -201,21 +201,19 @@ export const MEMBERS_DATA: Member[] = [
   {
     id: 'm2',
     name: 'This could be you!',
-    role: 'Master Student',
+    role: 'Ph.D Student',
     category: 'Students',
     imageUrl: '/photo/you.png',
   },
-  /*
+  
   {
     id: 'm3',
-    name: 'Emily Wong',
-    role: 'PhD Student',
+    name: 'This could be you!',
+    role: 'Master Student',
     category: 'Students',
-    imageUrl: 'https://picsum.photos/seed/std2/400/400',
-    description: 'Researching multi-modal learning and cross-domain adaptation.',
-    email: 'emily.w@university.edu',
-    website: 'https://example.com/emily-wong'
-  },
+    imageUrl: '/photo/you.png',
+  }
+  /*
   {
     id: 'm4',
     name: 'Michael Ross',
