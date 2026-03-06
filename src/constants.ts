@@ -190,11 +190,11 @@ export const PROJECTS_DATA: Project[] = [
 export const MEMBERS_DATA: Member[] = [
   {
     id: 'm1',
-    name: 'Prof. Jaehoon Cho',
-    role: 'Faculty',
+    name: 'Jaehoon Cho',
+    role: 'Professor',
     category: 'Faculty',
     imageUrl: '/photo/profile_photo.jpg',
-    description: 'Director of the AIMS Lab. Research interests include Deep Learning, Computer Vision, and Robotics.',
+    description: 'jh.cho (at) kau (dot) ac (dot) kr.',
     email: 'jh.cho@kau.ac.kr',
     website: 'https://jhcho90.github.io/'
   },
