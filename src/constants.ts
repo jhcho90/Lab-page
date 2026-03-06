@@ -201,19 +201,18 @@ export const MEMBERS_DATA: Member[] = [
   {
     id: 'm2',
     name: 'This could be you!',
-    role: 'Ph.D Student',
-    category: 'Students',
-    imageUrl: '/photo/you.png',
-  },
-  
-  {
-    id: 'm3',
-    name: 'This could be you!',
     role: 'Master Student',
     category: 'Students',
     imageUrl: '/photo/you.png',
   }
   /*
+  {
+    id: 'm3',
+    name: 'This could be you!',
+    role: 'Ph.D Student',
+    category: 'Students',
+    imageUrl: '/photo/you.png',
+  }
   {
     id: 'm4',
     name: 'Michael Ross',
