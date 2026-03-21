@@ -151,6 +151,22 @@ export const RESEARCH_DATA: Project[] = [
     link: '#'
   },
   {
+  id: 'proj5',
+  title: 'Quantization for Inference Acceleration',
+  description: 'FP32-to-INT8 Quantization of ONNX Models for Latency Reduction on Edge/Inference Hardware.',
+  imageUrl: '/photo/quantization.jpg',
+  status: 'Ongoing',
+  link: '#'
+  },
+  {
+  id: 'proj6',
+  title: 'Synthetic Data Augmentation for Real-World Model Performance',
+  description: 'This study investigates whether synthetic data can serve as a viable alternative or complement to real-world data in model training.',
+  imageUrl: '/photo/synthetic.jpg',
+  status: 'Ongoing',
+  link: '#'
+  },
+  {
   id: 'proj1',
   title: '200M RGB+D Dataset Construction',
   description: 'Constructing a large-scale indoor and outdoor RGB+D dataset with 200 million samples to enhance depth estimation and 3D scene understanding in diverse environments.',
