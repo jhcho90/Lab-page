@@ -252,9 +252,9 @@ function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4 block">Our Mission</span>
-            <h2 className="text-4xl font-display font-bold mb-6">Pioneering the Future of Intelligence</h2>
+            <h2 className="text-4xl font-display font-bold mb-6">We build vision AI that works in the real world</h2>
             <p className="text-zinc-600 leading-relaxed mb-6">
-              Our laboratory is dedicated to exploring the fundamental principles of intelligence and developing technologies that enhance human capabilities. We bring together experts from computer science, cognitive psychology, and engineering to tackle some of the most challenging problems in AI today.
+              We study how machines see and understand the world - not in ideal lab conditions, but in the real world. Our research makes vision AI work when data is scarce, compute is limited, and the environment is unpredictable.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
