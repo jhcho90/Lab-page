@@ -29,7 +29,7 @@ export const PUBLICATIONS_DATA: Publication[] = [
     title: 'Learning Confidence Measure with Transformer in Stereo Matching',
     authors: ['Jini Yang', 'Minjung Yoo', 'Jaehoon Cho', 'Sunok Kim'],
     venue: 'Pattern Recognition (PR)',
-    year: 2024,
+    year: 2025,
     type: 'Journal',
     link: '#'
   },
