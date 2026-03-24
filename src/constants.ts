@@ -19,7 +19,8 @@ export const NEWS_DATA: NewsItem[] = [
     id: '1',
     date: '2026-03-01',
     title: 'Recruiting new members!(연구생 모집)',
-    content: 'We are looking for students to work with! If you are interested, please send an email to the professor. (jh.cho at kau.ac.kr)'
+    content: 'We are looking for students to work with! If you are interested, please send an email to the professor. (jh.cho at kau.ac.kr)',
+    link: '#'
   }
 ];
 
@@ -133,14 +134,16 @@ export const RESEARCH_DATA: Project[] = [
     title: 'VLM-based VQA for Driving Scenarios',
     description: 'Developing a Vision-Language Model (VLM) for Visual Question Answering (VQA) to improve situational awareness and decision-making in complex autonomous driving scenarios.',    
     imageUrl: '/photo/VQA.jpg',
-    status: 'Ongoing'
+    status: 'Ongoing',
+    link: '/photo/[HMG]VQA.pdf/'
   },
   {
     id: 'proj3',
     title: 'Multi-sensor System Fusion',
     description: 'Implementing a robust multi-sensor fusion framework utilizing Unified BEV (Bird’s Eye View) representations to integrate LiDAR, Radar, and camera data for precise perception.',
     imageUrl: '/photo/BEV.jpg',
-    status: 'Ongoing'
+    status: 'Ongoing',
+    link: 'https://openreview.net/forum?id=yo9WIIecAu'
   },
   {
     id: 'proj4',
@@ -156,7 +159,7 @@ export const RESEARCH_DATA: Project[] = [
   description: 'FP32-to-INT8 Quantization of ONNX Models for Latency Reduction on Edge/Inference Hardware.',
   imageUrl: '/photo/quantization.jpg',
   status: 'Ongoing',
-  link: '#'
+  link: '/photo/[HMG]quantization.pdf/'
   },
   {
   id: 'proj6',
@@ -164,7 +167,7 @@ export const RESEARCH_DATA: Project[] = [
   description: 'This study investigates whether synthetic data can serve as a viable alternative or complement to real-world data in model training.',
   imageUrl: '/photo/synthetic.jpg',
   status: 'Ongoing',
-  link: '#'
+  link: '/photo/[HMG]synthetic_data.pdf/'
   },
   {
   id: 'proj1',
