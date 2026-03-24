@@ -3,6 +3,8 @@ export interface NewsItem {
   date: string;
   title: string;
   content: string;
+  link?: string;
+  imageUrl: string;
 }
 
 export type PublicationType = 'Conference' | 'Journal' | 'Workshop' | 'Preprint';
