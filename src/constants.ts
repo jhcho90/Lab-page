@@ -20,7 +20,6 @@ export const NEWS_DATA: NewsItem[] = [
     date: '2026-03-01',
     title: 'Recruiting new members!(연구생 모집)',
     content: 'We are looking for students to work with! Please send an email to the professor. (jh.cho at kau.ac.kr)',
-    imageUrl: '/photo/VQA.jpg',
     link: '/photo/AIMS_apply.pdf/'
   }
 ];
