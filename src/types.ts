@@ -1,3 +1,4 @@
+/*
 export interface NewsItem {
   id: string;
   date: string;
@@ -6,6 +7,16 @@ export interface NewsItem {
   link: string;
   imageUrl: string;
 }
+*/
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  status: 'Ongoing' | 'Completed';
+}
+
 
 export type PublicationType = 'Conference' | 'Journal' | 'Workshop' | 'Preprint';
 
