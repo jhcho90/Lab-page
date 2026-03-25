@@ -235,7 +235,7 @@ function AboutSection() {
                 {news.content}
               </p>
               <a 
-                href="#" 
+                href={news.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-zinc-600 transition-colors"
