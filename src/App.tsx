@@ -23,7 +23,7 @@ import {
 import { NEWS_DATA, PUBLICATIONS_DATA, RESEARCH_DATA, PROJECTS_DATA, MEMBERS_DATA, GALLERY_DATA } from './constants';
 
 
-import { PublicationType } from './types';
+import { PublicationType, Member, GalleryItem } from './types';
 import ChatBot from './components/ChatBot';
 
 type Section = 'About' | 'Publications' | 'Research' | 'Projects' |'Members' | 'Gallery';
