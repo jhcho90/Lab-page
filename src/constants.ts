@@ -260,7 +260,7 @@ export const MEMBERS_DATA: Member[] = [
     name: 'This could be you!',
     role: 'PhD Student',
     category: 'Students',
-    imageUrl: '/photo/profile_photo.jpg',
+    imageUrl: '/photo/you.jpg',
     description: 'Focusing on Large Language Models and their applications in software engineering.',
     email: 'david.c@university.edu',
     website: 'https://example.com/david-chen'
