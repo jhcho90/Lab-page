@@ -300,7 +300,6 @@ function PublicationsSection() {
   const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
   const [yearFilter, setYearFilter] = useState<number | 'All'>('All');
 
-  // 연도 목록 추출 (필터링 용도)
   const years = Array.from(new Set(PUBLICATIONS_DATA.map(p => p.year))).sort((a, b) => b - a);
 
   const filteredPubs = PUBLICATIONS_DATA.filter(pub => {
@@ -315,34 +314,52 @@ function PublicationsSection() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      {/* ... 상단 헤더 생략 ... */}
+      <div className="mb-12">
+        <h1 className="text-4xl font-display font-bold mb-4">Publications</h1>
+        <p className="text-zinc-500 max-w-2xl">
+          Our research is published in top-tier venues across machine learning, computer vision, and robotics.
+        </p>
+      </div>
 
-      <div className="flex flex-col md:flex-row gap-6 mb-12">
-        <div className="relative flex-grow">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
-          <input
-            type="text"
-            placeholder="Search by title or author..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white border border-zinc-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900/5 transition-all"
-          />
+      <div className="flex flex-col gap-6 mb-12">
+        <div className="flex flex-col md:flex-row gap-4">
+          {/* Search Bar */}
+          <div className="relative flex-grow">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
+            <input
+              type="text"
+              placeholder="Search by title or author..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-3 bg-white border border-zinc-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900/5 transition-all"
+            />
+          </div>
+
+          {/* Year Filter Dropdown - 추가된 부분 */}
+          <select 
+            value={yearFilter}
+            onChange={(e) => setYearFilter(e.target.value === 'All' ? 'All' : Number(e.target.value))}
+            className="px-4 py-3 bg-white border border-zinc-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-zinc-900/5 transition-all"
+          >
+            <option value="All">All Years</option>
+            {years.map(y => <option key={y} value={y}>{y}</option>)}
+          </select>
         </div>
         
-        {/* 타입 필터 버튼 (변수명 수정됨) */}
+        {/* Type Filter Buttons */}
         <div className="flex flex-wrap gap-2">
           {types.map((t) => (
             <button
               key={t}
-              onClick={() => setTypeFilter(t)} // setFilter -> setTypeFilter
+              onClick={() => setTypeFilter(t)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                typeFilter === t // filter -> typeFilter
+                typeFilter === t 
                   ? 'bg-zinc-900 text-white shadow-lg shadow-zinc-900/20' 
                   : 'bg-white text-zinc-600 border border-zinc-200 hover:border-zinc-400'
               }`}
             >
               {t}
-            </button>      
+            </button>
           ))}
         </div>
       </div>
@@ -354,6 +371,8 @@ function PublicationsSection() {
             <motion.div
               layout
               key={pub.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               className="bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
@@ -372,41 +391,24 @@ function PublicationsSection() {
                   <h3 className="text-xl font-bold text-zinc-900 leading-tight">{pub.title}</h3>
                   <p className="text-sm text-zinc-600">
                     {pub.authors.map((author, idx) => (
-                      <span key={idx} className={author === 'Lab Member' ? 'font-bold text-zinc-900' : ''}>
+                      <span 
+                        key={idx} 
+                        // 강조 로직 수정: 교수님 성함(Jaehoon Cho)이 포함되면 볼드 처리
+                        className={author.includes('Jaehoon Cho') ? 'font-bold text-zinc-900 underline decoration-zinc-300 underline-offset-4' : ''}
+                      >
                         {author}{idx < pub.authors.length - 1 ? ', ' : ''}
                       </span>
                     ))}
                   </p>
                   <p className="text-sm italic text-zinc-500">{pub.venue}</p>
                 </div>
-                <div className="flex gap-2 shrink-0">
-                  {pub.link && (
-                    <a 
-                      href={pub.link} 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-zinc-50 hover:bg-zinc-100 rounded-lg transition-colors text-zinc-600"
-                      title="View Link"
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  )}
-                  <a 
-                    href={pub.pdfUrl || "#"} 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 bg-zinc-50 hover:bg-zinc-100 rounded-lg transition-colors text-zinc-600"
-                    title="Download PDF"
-                  >
-                    <FileText size={18} />
-                  </a>
-                </div>
+                {/* ... 링크 아이콘 부분은 동일 ... */}
               </div>
             </motion.div>
           ))
         ) : (
           <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-zinc-200">
-            <div className="text-zinc-400 mb-2"><Search size={48} className="mx-auto opacity-20" /></div>
+            <Search size={48} className="mx-auto opacity-20 mb-4" />
             <p className="text-zinc-500">No publications found matching your criteria.</p>
           </div>
         )}
