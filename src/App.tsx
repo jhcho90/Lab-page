@@ -291,6 +291,7 @@ function AboutSection() {
   );
 }
 
+/*
 function PublicationsSection() {
   const [searchQuery, setSearchQuery] = useState('');
   const [filter, setFilter] = useState<PublicationType | 'All'>('All');
@@ -300,6 +301,22 @@ function PublicationsSection() {
                          pub.authors.some(a => a.toLowerCase().includes(searchQuery.toLowerCase()));
     const matchesFilter = filter === 'All' || pub.type === filter;
     return matchesSearch && matchesFilter;
+  });
+*/
+
+  function PublicationsSection() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
+  const [yearFilter, setYearFilter] = useState<number | 'All'>('All');
+
+  const years = Array.from(new Set(PUBLICATIONS_DATA.map(p => p.year))).sort((a, b) => b - a);
+
+  const filteredPubs = PUBLICATIONS_DATA.filter(pub => {
+    const matchesSearch = pub.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         pub.authors.some(a => a.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesType = typeFilter === 'All' || pub.type === typeFilter;
+    const matchesYear = yearFilter === 'All' || pub.year === yearFilter;
+    return matchesSearch && matchesType && matchesYear;
   });
 
   const types: (PublicationType | 'All')[] = ['All', 'Journal', 'Conference', 'Workshop', 'Preprint'];
@@ -513,7 +530,7 @@ function ProjectsSection() {
     </div>
   );
 }
-
+/*
 function MembersSection() {
   const [activeTab, setActiveTab] = useState<'Faculty' | 'Students'>('Faculty');
 
@@ -595,6 +612,125 @@ function MembersSection() {
             </motion.div>
           ))}
         </AnimatePresence>
+      </div>
+    </div>
+  );
+} */
+function MembersSection() {
+  const faculty = MEMBERS_DATA.filter(m => m.category === 'Faculty');
+  const students = MEMBERS_DATA.filter(m => m.category === 'Students');
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mb-16 text-center">
+        <h1 className="text-4xl font-display font-bold mb-4">Our Members</h1>
+        <p className="text-zinc-500 max-w-2xl mx-auto">
+          A diverse group of researchers committed to excellence and innovation.
+        </p>
+      </div>
+
+      {/* Members Grid - Merged */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {/* Faculty First (Top Left) */}
+        {faculty.map((member) => (
+          <div key={member.id}>
+            <MemberCard member={member} />
+          </div>
+        ))}
+        {/* Then Students */}
+        {students.map((member) => (
+          <div key={member.id}>
+            <MemberCard member={member} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MemberCard({ member }: { member: Member }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="flex flex-col items-center text-center group"
+    >
+      <div className="relative mb-6">
+        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          <img 
+            src={member.imageUrl} 
+            alt={member.name}
+            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+      </div>
+      <h3 className="text-2xl font-display font-bold mb-1">{member.name}</h3>
+      <div className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">{member.role}</div>
+      
+      {/* Direct Contact Buttons */}
+      <div className="flex space-x-2 mb-4">
+        {member.email && (
+          <a 
+            href={`mailto:${member.email}`} 
+            className="flex items-center gap-2 px-3 py-1.5 bg-zinc-100 hover:bg-zinc-900 hover:text-white rounded-lg text-xs font-medium transition-all"
+          >
+            <Mail size={14} /> Email
+          </a>
+        )}
+        {member.website && (
+          <a 
+            href={member.website} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-1.5 bg-zinc-100 hover:bg-zinc-900 hover:text-white rounded-lg text-xs font-medium transition-all"
+          >
+            <Globe size={14} /> Website
+          </a>
+        )}
+      </div>
+
+      <p className="text-zinc-600 text-sm leading-relaxed max-w-xs">
+        {member.description}
+      </p>
+    </motion.div>
+  );
+}
+
+function GallerySection() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mb-12">
+        <h1 className="text-4xl font-display font-bold mb-4">Gallery</h1>
+        <p className="text-zinc-500 max-w-2xl">
+          Capturing the moments and memories of our lab life.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {GALLERY_DATA.map((item) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={item.imageUrl} 
+                alt={item.event}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="p-6">
+              <div className="text-[10px] font-mono text-zinc-400 mb-2">{item.date}</div>
+              <h3 className="text-lg font-bold text-zinc-900 leading-tight">{item.event}</h3>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
