@@ -518,87 +518,94 @@ function ProjectsSection() {
     </div>
   );
 }
+
+
 function MembersSection() {
+  const [activeTab, setActiveTab] = useState<'Faculty' | 'Students'>('Faculty');
+
   const faculty = MEMBERS_DATA.filter(m => m.category === 'Faculty');
   const students = MEMBERS_DATA.filter(m => m.category === 'Students');
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="mb-16 text-center">
+      <div className="mb-12 text-center">
         <h1 className="text-4xl font-display font-bold mb-4">Our Members</h1>
         <p className="text-zinc-500 max-w-2xl mx-auto">
           A diverse group of researchers committed to excellence and innovation.
         </p>
       </div>
 
-      {/* Members Grid - Merged */}
+      {/* Tabs */}
+      <div className="flex justify-center mb-16">
+        <div className="bg-zinc-100 p-1 rounded-2xl flex">
+          {(['Faculty', 'Students'] as const).map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-8 py-3 rounded-xl text-sm font-bold transition-all ${
+                activeTab === tab 
+                  ? 'bg-white text-zinc-900 shadow-sm' 
+                  : 'text-zinc-500 hover:text-zinc-700'
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Members Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {/* Faculty First (Top Left) */}
-        {faculty.map((member) => (
-          <div key={member.id}>
-            <MemberCard member={member} />
-          </div>
-        ))}
-        {/* Then Students */}
-        {students.map((member) => (
-          <div key={member.id}>
-            <MemberCard member={member} />
-          </div>
-        ))}
+        <AnimatePresence mode="wait">
+          {(activeTab === 'Faculty' ? faculty : students).map((member) => (
+            <motion.div
+              key={member.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="relative mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                  <img 
+                    src={member.imageUrl} 
+                    alt={member.name}
+                    className="w-full h-full object-cover" // grayscale group-hover:grayscale-0 transition-all duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {member.email && (
+                    <a href={`mailto:${member.email}`} className="p-2 bg-zinc-900 text-white rounded-full hover:bg-zinc-700 transition-colors">
+                      <Mail size={14} />
+                    </a>
+                  )}
+                  {member.website && (
+                    <a 
+                      href={member.website} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-zinc-900 text-white rounded-full hover:bg-zinc-700 transition-colors"
+                    >
+                      <Globe size={14} />
+                    </a>
+                  )}
+                </div>
+              </div>
+              <h3 className="text-2xl font-display font-bold mb-1">{member.name}</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">{member.role}</div>
+              <p className="text-zinc-600 text-sm leading-relaxed max-w-xs">
+                {member.description}
+              </p>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
     </div>
   );
 }
 
-function MemberCard({ member }: { member: Member }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className="flex flex-col items-center text-center group"
-    >
-      <div className="relative mb-6">
-        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
-          <img 
-            src={member.imageUrl} 
-            alt={member.name}
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-      </div>
-      <h3 className="text-2xl font-display font-bold mb-1">{member.name}</h3>
-      <div className="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">{member.role}</div>
-      
-      {/* Direct Contact Buttons */}
-      <div className="flex space-x-2 mb-4">
-        {member.email && (
-          <a 
-            href={`mailto:${member.email}`} 
-            className="flex items-center gap-2 px-3 py-1.5 bg-zinc-100 hover:bg-zinc-900 hover:text-white rounded-lg text-xs font-medium transition-all"
-          >
-            <Mail size={14} /> Email
-          </a>
-        )}
-        {member.website && (
-          <a 
-            href={member.website} 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 py-1.5 bg-zinc-100 hover:bg-zinc-900 hover:text-white rounded-lg text-xs font-medium transition-all"
-          >
-            <Globe size={14} /> Website
-          </a>
-        )}
-      </div>
-
-      <p className="text-zinc-600 text-sm leading-relaxed max-w-xs">
-        {member.description}
-      </p>
-    </motion.div>
-  );
-}
 
 function GallerySection() {
   return (
