@@ -20,11 +20,13 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import { NEWS_DATA, PUBLICATIONS_DATA, RESEARCH_DATA, PROJECTS_DATA, MEMBERS_DATA } from './constants';
+import { NEWS_DATA, PUBLICATIONS_DATA, RESEARCH_DATA, PROJECTS_DATA, MEMBERS_DATA, GALLERY_DATA } from './constants';
+
+
 import { PublicationType } from './types';
 import ChatBot from './components/ChatBot';
 
-type Section = 'About' | 'Publications' | 'Research' | 'Projects' |'Members';
+type Section = 'About' | 'Publications' | 'Research' | 'Projects' |'Members' | 'Gallery';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<Section>('About');
@@ -46,7 +48,7 @@ export default function App() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {(['About', 'Publications', 'Research', 'Projects', 'Members'] as Section[]).map((section) => (
+              {(['About', 'Publications', 'Research', 'Projects', 'Members','Gallery'] as Section[]).map((section) => (
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
@@ -78,7 +80,7 @@ export default function App() {
               className="md:hidden bg-white border-t border-zinc-100 overflow-hidden"
             >
               <div className="px-4 py-4 space-y-4">
-                {(['About', 'Publications', 'Research', 'Projects', 'Members'] as Section[]).map((section) => (
+                {(['About', 'Publications', 'Research', 'Projects', 'Members', 'Gallery'] as Section[]).map((section) => (
                   <button
                     key={section}
                     onClick={() => {
@@ -111,6 +113,7 @@ export default function App() {
             {activeSection === 'Research' && <ResearchSection />}
             {activeSection === 'Projects' && <ProjectsSection />}
             {activeSection === 'Members' && <MembersSection />}
+            {activeSection === 'Gallery' && <GallerySection />}
           </motion.div>
         </AnimatePresence>
       </main>
