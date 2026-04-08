@@ -57,3 +57,12 @@ export interface Member {
   email?: string;
   website?: string;
 }
+
+
+export interface GalleryItem {
+  id: string;
+  imageUrl: string;
+  event: string;
+  date: string;
+}
+
