@@ -205,7 +205,7 @@ export const PROJECTS_DATA: Project[] = [
 
 
 
-
+/*
 export const MEMBERS_DATA: Member[] = [
   {
     id: 'm1',
@@ -224,7 +224,7 @@ export const MEMBERS_DATA: Member[] = [
     category: 'Students',
     imageUrl: '/photo/you.png',
   }
-  /*
+
   {
     id: 'm3',
     name: 'This could be you!',
@@ -242,5 +242,67 @@ export const MEMBERS_DATA: Member[] = [
     email: 'michael.r@university.edu',
     website: 'https://example.com/michael-ross'
   }
-  */
+  
+]; */
+
+export const MEMBERS_DATA: Member[] = [
+  {
+    id: 'm1',
+    name: 'Jaehoon Cho',
+    role: 'Faculty',
+    category: 'Faculty',
+    imageUrl: '/photo/profile_photo.jpg',
+    description: 'Director of the AIMS Lab. E-mail: jh.cho (at) kau (dot) ac (dot) kr',
+    email: 'jh.cho@kau.ac.kr',
+    website: 'https://jhcho90.github.io/'
+  },
+  {
+    id: 'm2',
+    name: 'This could be you!',
+    role: 'PhD Student',
+    category: 'Students',
+    imageUrl: '/photo/profile_photo.jpg',
+    description: 'Focusing on Large Language Models and their applications in software engineering.',
+    email: 'david.c@university.edu',
+    website: 'https://example.com/david-chen'
+  }
+];
+
+export const GALLERY_DATA: GalleryItem[] = [
+  {
+    id: 'g1',
+    imageUrl: 'https://picsum.photos/seed/lab-party/800/600',
+    event: '2023 Year-end Lab Party',
+    date: '2023-12-20'
+  },
+  {
+    id: 'g2',
+    imageUrl: 'https://picsum.photos/seed/conf-trip/800/600',
+    event: 'CVPR 2024 Conference Trip in Seattle',
+    date: '2024-06-18'
+  },
+  {
+    id: 'g3',
+    imageUrl: 'https://picsum.photos/seed/hiking/800/600',
+    event: 'Spring Lab Hiking Trip',
+    date: '2024-04-10'
+  },
+  {
+    id: 'g4',
+    imageUrl: 'https://picsum.photos/seed/workshop/800/600',
+    event: 'AI Systems Workshop 2024',
+    date: '2024-05-05'
+  },
+  {
+    id: 'g5',
+    imageUrl: 'https://picsum.photos/seed/seminar/800/600',
+    event: 'Guest Seminar: Future of Robotics',
+    date: '2024-03-15'
+  },
+  {
+    id: 'g6',
+    imageUrl: 'https://picsum.photos/seed/graduation/800/600',
+    event: '2024 Summer Graduation Celebration',
+    date: '2024-08-25'
+  }
 ];
