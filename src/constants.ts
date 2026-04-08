@@ -264,6 +264,16 @@ export const MEMBERS_DATA: Member[] = [
     description: 'Focusing on Large Language Models and their applications in software engineering.',
     email: 'david.c@university.edu',
     website: 'https://example.com/david-chen'
+  },
+    {
+    id: 'm3',
+    name: 'Alumni',
+    role: 'PhD Student',
+    category: 'Alumni',
+    imageUrl: '/photo/you.png',
+    description: 'Our memeber',
+    email: 'david.c@university.edu',
+    website: 'https://example.com/david-chen'
   }
 ];
 
