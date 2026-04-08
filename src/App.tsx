@@ -294,68 +294,7 @@ function AboutSection() {
   );
 }
 
-/*
-function PublicationsSection() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filter, setFilter] = useState<PublicationType | 'All'>('All');
 
-  const filteredPubs = PUBLICATIONS_DATA.filter(pub => {
-    const matchesSearch = pub.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         pub.authors.some(a => a.toLowerCase().includes(searchQuery.toLowerCase()));
-    const matchesFilter = filter === 'All' || pub.type === filter;
-    return matchesSearch && matchesFilter;
-  });
-  function PublicationsSection() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
-  const [yearFilter, setYearFilter] = useState<number | 'All'>('All');
-
-  const years = Array.from(new Set(PUBLICATIONS_DATA.map(p => p.year))).sort((a, b) => b - a);
-
-  const filteredPubs = PUBLICATIONS_DATA.filter(pub => {
-    const matchesSearch = pub.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         pub.authors.some(a => a.toLowerCase().includes(searchQuery.toLowerCase()));
-    const matchesType = typeFilter === 'All' || pub.type === typeFilter;
-    const matchesYear = yearFilter === 'All' || pub.year === yearFilter;
-    return matchesSearch && matchesType && matchesYear;
-  });
-
-  const types: (PublicationType | 'All')[] = ['All', 'Journal', 'Conference', 'Workshop', 'Preprint'];
-
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="mb-12">
-        <h1 className="text-4xl font-display font-bold mb-4">Publications</h1>
-        <p className="text-zinc-500 max-w-2xl">
-          Our research is published in top-tier venues across machine learning, computer vision, and robotics.
-        </p>
-      </div>
-
-      {/* Filters & Search */}
-      <div className="flex flex-col md:flex-row gap-6 mb-12">
-        <div className="relative flex-grow">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
-          <input
-            type="text"
-            placeholder="Search by title or author..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white border border-zinc-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900/5 transition-all"
-          />
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {types.map((t) => (
-            <button
-              key={t}
-              onClick={() => setFilter(t)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                filter === t 
-                  ? 'bg-zinc-900 text-white shadow-lg shadow-zinc-900/20' 
-                  : 'bg-white text-zinc-600 border border-zinc-200 hover:border-zinc-400'
-              }`}
-            >
-              {t}
-            </button> */
 function PublicationsSection() {
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
