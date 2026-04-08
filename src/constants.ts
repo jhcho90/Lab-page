@@ -1,4 +1,4 @@
-import { NewsItem, Publication, Project, Member } from './types';
+import { NewsItem, Publication, Project, Member, GalleryItem } from './types';
 
 export const NEWS_DATA: NewsItem[] = [
   /*
