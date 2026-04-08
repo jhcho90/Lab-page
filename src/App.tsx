@@ -305,8 +305,6 @@ function PublicationsSection() {
     const matchesFilter = filter === 'All' || pub.type === filter;
     return matchesSearch && matchesFilter;
   });
-*/
-
   function PublicationsSection() {
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
@@ -357,7 +355,55 @@ function PublicationsSection() {
               }`}
             >
               {t}
-            </button>
+            </button> */
+function PublicationsSection() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [typeFilter, setTypeFilter] = useState<PublicationType | 'All'>('All');
+  const [yearFilter, setYearFilter] = useState<number | 'All'>('All');
+
+  // 연도 목록 추출 (필터링 용도)
+  const years = Array.from(new Set(PUBLICATIONS_DATA.map(p => p.year))).sort((a, b) => b - a);
+
+  const filteredPubs = PUBLICATIONS_DATA.filter(pub => {
+    const matchesSearch = pub.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         pub.authors.some(a => a.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesType = typeFilter === 'All' || pub.type === typeFilter;
+    const matchesYear = yearFilter === 'All' || pub.year === yearFilter;
+    return matchesSearch && matchesType && matchesYear;
+  });
+
+  const types: (PublicationType | 'All')[] = ['All', 'Journal', 'Conference', 'Workshop', 'Preprint'];
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {/* ... 상단 헤더 생략 ... */}
+
+      <div className="flex flex-col md:flex-row gap-6 mb-12">
+        <div className="relative flex-grow">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
+          <input
+            type="text"
+            placeholder="Search by title or author..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-10 pr-4 py-3 bg-white border border-zinc-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-zinc-900/5 transition-all"
+          />
+        </div>
+        
+        {/* 타입 필터 버튼 (변수명 수정됨) */}
+        <div className="flex flex-wrap gap-2">
+          {types.map((t) => (
+            <button
+              key={t}
+              onClick={() => setTypeFilter(t)} // setFilter -> setTypeFilter
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                typeFilter === t // filter -> typeFilter
+                  ? 'bg-zinc-900 text-white shadow-lg shadow-zinc-900/20' 
+                  : 'bg-white text-zinc-600 border border-zinc-200 hover:border-zinc-400'
+              }`}
+            >
+              {t}
+            </button>      
           ))}
         </div>
       </div>
