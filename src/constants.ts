@@ -223,8 +223,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'Master Student',
     category: 'Students',
     imageUrl: '/photo/you.png',
-  }
-
+  },
   {
     id: 'm3',
     name: 'This could be you!',
@@ -252,7 +251,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'Faculty',
     category: 'Faculty',
     imageUrl: '/photo/profile_photo.jpg',
-    description: 'Director of the AIMS Lab. E-mail: jh.cho (at) kau (dot) ac (dot) kr',
+    description: 'E-mail: jh.cho (at) kau (dot) ac (dot) kr',
     email: 'jh.cho@kau.ac.kr',
     website: 'https://jhcho90.github.io/'
   },
