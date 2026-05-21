@@ -514,7 +514,7 @@ function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
                   >
-                    Code
+                    Code <ChevronRight size={14} className="ml-1" />
                   </a>
                 </div>
               )}
@@ -524,7 +524,7 @@ function ProjectsSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
               >
-                Learn More <ChevronRight size={14} className="ml-1" />
+                Dataset <ChevronRight size={14} className="ml-1" />
               </a>
             </div>
           </div>
