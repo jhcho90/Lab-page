@@ -175,7 +175,7 @@ export const PROJECTS_DATA: Project[] = [
 {
   id: 'proj3',
   title: 'Real-World Time-Lapse Rainy Dataset', // 타이틀 대문자 통일
-  description: 'A newly constructed dataset featuring real-world, time-lapse rainy scenes, designed to enhance model generalization in practical environments.[[Code]](https://github.com/jhcho90/MGID/)',
+  description: 'A newly constructed dataset featuring real-world, time-lapse rainy scenes, designed to enhance model generalization in practical environments.',
   imageUrl: '/photo/timelapse_data.png',
   status: 'Completed',
   codeUrl: 'https://github.com/jhcho90/MGID/', // Code 전용
