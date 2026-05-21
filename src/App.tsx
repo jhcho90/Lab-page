@@ -505,6 +505,19 @@ function ProjectsSection() {
               <p className="text-zinc-600 text-sm leading-relaxed mb-6">
                 {project.description}
               </p>
+                            {/* 이 부분을 추가하여 기존 Learn More 위에 Code 전용 미니 링크를 배치합니다 */}
+              {project.codeUrl && (
+                <div className="mb-4">
+                  <a 
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-xs font-medium text-blue-600 hover:underline"
+                  >
+                    📦 GitHub Repository 바로가기
+                  </a>
+                </div>
+              )}
               <a 
                 href={project.link || "#"}
                 target="_blank"
