@@ -178,7 +178,9 @@ export const PROJECTS_DATA: Project[] = [
   description: 'A newly constructed dataset featuring real-world, time-lapse rainy scenes, designed to enhance model generalization in practical environments.[[Code]](https://github.com/jhcho90/MGID/)',
   imageUrl: '/photo/timelapse_data.png',
   status: 'Completed',
-  link: 'https://drive.google.com/file/d/1scs_LN4Rk6M0VEzYYnCPWTfuHISd_8f-/view?usp=drive_link'
+  codeUrl: 'https://github.com/jhcho90/MGID/', // Code 전용
+  link: 'https://drive.google.com/file/d/1scs_LN4Rk6M0VEzYYnCPWTfuHISd_8f-/view?usp=drive_link' // Learn More용
+  // link: 'https://drive.google.com/file/d/1scs_LN4Rk6M0VEzYYnCPWTfuHISd_8f-/view?usp=drive_link'
 },
 {
   id: 'proj2',
