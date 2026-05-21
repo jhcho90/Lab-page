@@ -512,9 +512,9 @@ function ProjectsSection() {
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-xs font-medium text-blue-600 hover:underline"
+                    className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 group-hover:translate-x-2 transition-transform"
                   >
-                    📦 GitHub Repository 바로가기
+                    Code
                   </a>
                 </div>
               )}
