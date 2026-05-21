@@ -168,8 +168,27 @@ export const RESEARCH_DATA: Project[] = [
   imageUrl: '/photo/synthetic.jpg',
   status: 'Ongoing',
   link: '/photo/[HMG]synthetic_data.pdf/'
-  },
-  {
+  }
+];
+
+export const PROJECTS_DATA: Project[] = [
+{
+  id: 'proj3',
+  title: 'Real-World Time-Lapse Rainy Dataset', // 타이틀 대문자 통일
+  description: 'A newly constructed dataset featuring real-world, time-lapse rainy scenes, designed to enhance model generalization in practical environments.[[Code]](https://github.com/jhcho90/MGID/)',
+  imageUrl: '/photo/timelapse_data.png',
+  status: 'Completed',
+  link: 'https://drive.google.com/file/d/1scs_LN4Rk6M0VEzYYnCPWTfuHISd_8f-/view?usp=drive_link'
+},
+{
+  id: 'proj2',
+  title: 'Freespace Dataset', // 오타 수정 (Freesapce -> Freespace) 및 대문자 통일
+  description: 'This dataset provides freespace detection results generated using the off-the-shelf STIXEL algorithm.',
+  imageUrl: '/photo/freespace.png',
+  status: 'Completed',
+  link: 'https://drive.google.com/file/d/1DFqzi7397EKn-Zm_HwRkASKRjSBxLp7i/view?usp=drive_link'
+},
+    {
   id: 'proj1',
   title: '200M RGB+D Dataset Construction',
   description: 'Constructing a large-scale indoor and outdoor RGB+D dataset with 200 million samples to enhance depth estimation and 3D scene understanding in diverse environments.',
@@ -177,9 +196,6 @@ export const RESEARCH_DATA: Project[] = [
   status: 'Completed',
   link: 'https://dimlrgbd.github.io/'
   }
-];
-
-export const PROJECTS_DATA: Project[] = [
   // {
   //   id: 'proj1',
   //   title: 'Next-Gen Autonomous Navigation',
