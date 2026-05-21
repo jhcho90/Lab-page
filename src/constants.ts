@@ -257,11 +257,11 @@ export const MEMBERS_DATA: Member[] = [
   },
   {
   id: 'm4',
-  name: 'Chulhyun Park',
+  name: 'Cheolhyeon Park',
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/chpark.jpg',
-  description: 'Focusing on deep learning and its applications in software engineering.',
+  description: 'Focusing on computer vision and deep learning.',
   email: 'snowscarp@naver.com',
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
@@ -271,7 +271,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'PhD Student',
     category: 'Students',
     imageUrl: '/photo/you.png',
-    description: 'Focusing on Large Language Models and their applications in software engineering.',
+    description: 'Focusing on Large Language Models.',
     email: 'david.c@university.edu',
     website: 'https://example.com/david-chen'
   },
