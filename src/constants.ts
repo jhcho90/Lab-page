@@ -256,6 +256,16 @@ export const MEMBERS_DATA: Member[] = [
     website: 'https://jhcho90.github.io/'
   },
   {
+  id: 'm4',
+  name: 'Chulhyun Park',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/chpark.jpg',
+  description: 'Focusing on deep learning and its applications in software engineering.',
+  email: 'snowscarp@naver.com',
+  website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+},
+  {
     id: 'm2',
     name: 'This could be you!',
     role: 'PhD Student',
