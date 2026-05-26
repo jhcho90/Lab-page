@@ -284,6 +284,26 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
   {
+  id: 'm5',
+  name: 'Minseo Kim',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/mskim.jpg',
+  description: 'Focusing on Vision-Language and Multi-modal Models.',
+  email: 'guykms814@naver.com',
+  website: 'https://www.linkedin.com/in/민서-김-4324a6410'
+},
+   {
+  id: 'm6',
+  name: 'Minseok Byun',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/bmseok.gif',
+  description: 'Focusing on Computer Vision and Physical AI.',
+  email: 'bms6576@naver.com',
+  website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
+},
+  {
     id: 'm2',
     name: 'This could be you!',
     role: 'PhD Student',
