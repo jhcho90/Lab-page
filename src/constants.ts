@@ -271,7 +271,7 @@ export const MEMBERS_DATA: Member[] = [
     imageUrl: '/photo/profile_photo.jpg',
     description: 'E-mail: jh.cho (at) kau (dot) ac (dot) kr',
     email: 'jh.cho@kau.ac.kr',
-    website: 'https://jhcho90.github.io/'
+    website: 'https://www.linkedin.com/in/jhcho90/'
   },
   {
   id: 'm4',
