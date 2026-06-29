@@ -26,6 +26,15 @@ export const NEWS_DATA: NewsItem[] = [
 
 export const PUBLICATIONS_DATA: Publication[] = [
   {
+    id: 'p12',
+    title: 'Despeckling-Free Detector Pretraining for Speckle-Robust SAR Ship Detection',
+    authors: ['Minsu Kim', 'Jaehoon Cho', 'Sunok Kim'],
+    venue: 'IEEE Geoscience and Remote Sensing Letters (submitted)',
+    year: 2026,
+    type: 'Journal',
+    link: '#'
+  },  
+  {
     id: 'p1',
     title: 'Learning Confidence Measure with Transformer in Stereo Matching',
     authors: ['Jini Yang', 'Minjung Yoo', 'Jaehoon Cho', 'Sunok Kim'],
