@@ -318,7 +318,7 @@ export const MEMBERS_DATA: Member[] = [
   name: 'Seojin Hwawng',
   role: 'Intern',
   category: 'Students',
-  imageUrl: '/photo/bmseok.gif',
+  imageUrl: '/photo/seojin.jpg',
   description: 'Focusing on Computer Vision and AI.',
   email: 'yolam0125@gmail.com',
   website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
