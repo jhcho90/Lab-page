@@ -274,7 +274,7 @@ export const MEMBERS_DATA: Member[] = [
     website: 'https://www.linkedin.com/in/jhcho90/'
   },
   {
-  id: 'm4',
+  id: 'm2',
   name: 'Cheolhyeon Park',
   role: 'Intern',
   category: 'Students',
@@ -284,7 +284,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
   {
-  id: 'm5',
+  id: 'm3',
   name: 'Minseo Kim',
   role: 'Intern',
   category: 'Students',
@@ -294,7 +294,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/민서-김-4324a6410'
 },
    {
-  id: 'm6',
+  id: 'm4',
   name: 'Minseok Byun',
   role: 'Intern',
   category: 'Students',
@@ -303,8 +303,28 @@ export const MEMBERS_DATA: Member[] = [
   email: 'bms6576@naver.com',
   website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
 },
+     {
+  id: 'm7',
+  name: 'Seungwon Kim',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/seungwon.jpg',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'seungwon00038@gmail.com',
+  website: 'www.linkedin.com/in/seungwon06699418'
+},
+     {
+  id: 'm8',
+  name: 'Seojin Hwawng',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/bmseok.gif',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'yolam0125@gmail.com',
+  website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+},
   {
-    id: 'm2',
+    id: 'm5',
     name: 'This could be you!',
     role: 'PhD Student',
     category: 'Students',
@@ -314,7 +334,7 @@ export const MEMBERS_DATA: Member[] = [
     website: 'https://example.com/david-chen'
   },
     {
-    id: 'm3',
+    id: 'm6',
     name: 'Alumni',
     role: 'PhD Student',
     category: 'Alumni',
@@ -328,38 +348,38 @@ export const MEMBERS_DATA: Member[] = [
 export const GALLERY_DATA: GalleryItem[] = [
   {
     id: 'g1',
-    imageUrl: 'https://picsum.photos/seed/lab-party/800/600',
-    event: '2023 Year-end Lab Party',
-    date: '2023-12-20'
-  },
-  {
-    id: 'g2',
-    imageUrl: 'https://picsum.photos/seed/conf-trip/800/600',
-    event: 'CVPR 2024 Conference Trip in Seattle',
-    date: '2024-06-18'
-  },
-  {
-    id: 'g3',
-    imageUrl: 'https://picsum.photos/seed/hiking/800/600',
-    event: 'Spring Lab Hiking Trip',
-    date: '2024-04-10'
-  },
-  {
-    id: 'g4',
-    imageUrl: 'https://picsum.photos/seed/workshop/800/600',
-    event: 'AI Systems Workshop 2024',
-    date: '2024-05-05'
-  },
-  {
-    id: 'g5',
-    imageUrl: 'https://picsum.photos/seed/seminar/800/600',
-    event: 'Guest Seminar: Future of Robotics',
-    date: '2024-03-15'
-  },
-  {
-    id: 'g6',
-    imageUrl: 'https://picsum.photos/seed/graduation/800/600',
-    event: '2024 Summer Graduation Celebration',
-    date: '2024-08-25'
+    imageUrl: '/photo/sinjin.jpg',
+    event: 'Invited Speaker, Early-Career Researcher Session: "Physical AI," The Institute of Electronics and Information Engineers (IEIE)',
+    date: '2026-06-25'
   }
+  // {
+  //   id: 'g2',
+  //   imageUrl: 'https://picsum.photos/seed/conf-trip/800/600',
+  //   event: 'CVPR 2024 Conference Trip in Seattle',
+  //   date: '2024-06-18'
+  // },
+  // {
+  //   id: 'g3',
+  //   imageUrl: 'https://picsum.photos/seed/hiking/800/600',
+  //   event: 'Spring Lab Hiking Trip',
+  //   date: '2024-04-10'
+  // },
+  // {
+  //   id: 'g4',
+  //   imageUrl: 'https://picsum.photos/seed/workshop/800/600',
+  //   event: 'AI Systems Workshop 2024',
+  //   date: '2024-05-05'
+  // },
+  // {
+  //   id: 'g5',
+  //   imageUrl: 'https://picsum.photos/seed/seminar/800/600',
+  //   event: 'Guest Seminar: Future of Robotics',
+  //   date: '2024-03-15'
+  // },
+  // {
+  //   id: 'g6',
+  //   imageUrl: 'https://picsum.photos/seed/graduation/800/600',
+  //   event: '2024 Summer Graduation Celebration',
+  //   date: '2024-08-25'
+  // }
 ];
