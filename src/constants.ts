@@ -311,7 +311,7 @@ export const MEMBERS_DATA: Member[] = [
   imageUrl: '/photo/seungwon.jpg',
   description: 'Focusing on Computer Vision and AI.',
   email: 'seungwon00038@gmail.com',
-  website: 'www.linkedin.com/in/seungwon06699418'
+  website: 'https://www.linkedin.com/in/seungwon06699418/'
 },
      {
   id: 'm8',
