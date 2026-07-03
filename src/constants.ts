@@ -324,13 +324,23 @@ export const MEMBERS_DATA: Member[] = [
 },
      {
   id: 'm8',
-  name: 'Seojin Hwawng',
+  name: 'Seojin Hwang',
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/seojin.jpg',
   description: 'Focusing on Computer Vision and AI.',
   email: 'yolam0125@gmail.com',
   website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+},
+       {
+  id: 'm9',
+  name: 'KeunChang Tong',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/keunchang.jpg',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'conantong1110@gmail.com',
+  website: 'www.linkedin.com/in/근창-동-67693941b'
 },
   {
     id: 'm5',
