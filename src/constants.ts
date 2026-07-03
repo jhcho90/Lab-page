@@ -340,7 +340,7 @@ export const MEMBERS_DATA: Member[] = [
   imageUrl: '/photo/keunchang.jpg',
   description: 'Focusing on Computer Vision and AI.',
   email: 'conantong1110@gmail.com',
-  website: 'www.linkedin.com/in/근창-동-67693941b'
+  website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
   {
     id: 'm5',
