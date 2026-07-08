@@ -338,10 +338,20 @@ export const MEMBERS_DATA: Member[] = [
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/keunchang.jpg',
-  description: 'Focusing on Computer Vision and AI.',
+  description: 'Focusing on Computer Vision and Quantization.',
   email: 'conantong1110@gmail.com',
   website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
+       {
+  id: 'm10',
+  name: 'JIHYUCK HONG',
+  role: 'M.S. Student',
+  category: 'Students',
+  imageUrl: '/photo/jihuck.jpg',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'johnhong0624@daum.net',
+  website: 'www.linkedin.com/in/지혁-홍-0a3693401'
+       },
   {
     id: 'm5',
     name: 'This could be you!',
