@@ -350,7 +350,7 @@ export const MEMBERS_DATA: Member[] = [
   imageUrl: '/photo/jihuck.jpg',
   description: 'Focusing on Computer Vision and AI.',
   email: 'johnhong0624@daum.net',
-  website: 'www.linkedin.com/in/지혁-홍-0a3693401'
+  website: 'https://www.linkedin.com/in/지혁-홍-0a3693401'
        },
   {
     id: 'm5',
