@@ -282,8 +282,18 @@ export const MEMBERS_DATA: Member[] = [
     email: 'jh.cho@kau.ac.kr',
     website: 'https://www.linkedin.com/in/jhcho90/'
   },
-  {
+         {
   id: 'm2',
+  name: 'Jihyuck Hong',
+  role: 'M.S. Student',
+  category: 'Students',
+  imageUrl: '/photo/jihuck.jpg',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'johnhong0624@daum.net',
+  website: 'https://www.linkedin.com/in/지혁-홍-0a3693401'
+       },
+  {
+  id: 'm3',
   name: 'Cheolhyeon Park',
   role: 'Intern',
   category: 'Students',
@@ -293,7 +303,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
   {
-  id: 'm3',
+  id: 'm4',
   name: 'Minseo Kim',
   role: 'Intern',
   category: 'Students',
@@ -303,7 +313,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/민서-김-4324a6410'
 },
    {
-  id: 'm4',
+  id: 'm5',
   name: 'Minseok Byun',
   role: 'Intern',
   category: 'Students',
@@ -313,7 +323,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
 },
      {
-  id: 'm7',
+  id: 'm6',
   name: 'Seungwon Kim',
   role: 'Intern',
   category: 'Students',
@@ -323,7 +333,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/seungwon06699418/'
 },
      {
-  id: 'm8',
+  id: 'm7',
   name: 'Seojin Hwang',
   role: 'Intern',
   category: 'Students',
@@ -333,8 +343,8 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
        {
-  id: 'm9',
-  name: 'KeunChang Tong',
+  id: 'm8',
+  name: 'Keunchang Tong',
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/keunchang.jpg',
@@ -342,18 +352,18 @@ export const MEMBERS_DATA: Member[] = [
   email: 'conantong1110@gmail.com',
   website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
-       {
-  id: 'm10',
-  name: 'JIHYUCK HONG',
-  role: 'M.S. Student',
+  {
+  id: 'm9',
+  name: 'Dowon Kim',
+  role: 'Intern',
   category: 'Students',
-  imageUrl: '/photo/jihuck.jpg',
+  imageUrl: '/photo/dowonkim.png',
   description: 'Focusing on Computer Vision and AI.',
-  email: 'johnhong0624@daum.net',
-  website: 'https://www.linkedin.com/in/지혁-홍-0a3693401'
+  email: 'kevin020508@naver.com',
+  website: 'https://www.linkedin.com/in/김도원-kevin0205'
        },
   {
-    id: 'm5',
+    id: 'm10',
     name: 'This could be you!',
     role: 'PhD Student',
     category: 'Students',
@@ -363,7 +373,7 @@ export const MEMBERS_DATA: Member[] = [
     website: 'https://example.com/david-chen'
   },
     {
-    id: 'm6',
+    id: 'm11',
     name: 'Alumni',
     role: 'PhD Student',
     category: 'Alumni',
