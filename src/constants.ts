@@ -139,7 +139,7 @@ export const PUBLICATIONS_DATA: Publication[] = [
 export const RESEARCH_DATA: Project[] = [
 
   {
-    id: 'proj2',
+    id: 'res-2',
     title: 'VLM-based VQA for Driving Scenarios',
     description: 'Developing a Vision-Language Model (VLM) for Visual Question Answering (VQA) to improve situational awareness and decision-making in complex autonomous driving scenarios.',    
     imageUrl: '/photo/VQA.jpg',
@@ -147,7 +147,7 @@ export const RESEARCH_DATA: Project[] = [
     link: '/photo/[HMG]VQA.pdf/'
   },
   {
-    id: 'proj3',
+    id: 'res-3',
     title: 'Multi-sensor System Fusion',
     description: 'Implementing a robust multi-sensor fusion framework utilizing Unified BEV (Bird’s Eye View) representations to integrate LiDAR, Radar, and camera data for precise perception.',
     imageUrl: '/photo/BEV.jpg',
@@ -155,7 +155,7 @@ export const RESEARCH_DATA: Project[] = [
     link: 'https://openreview.net/forum?id=yo9WIIecAu'
   },
   {
-    id: 'proj4',
+    id: 'res-4',
     title: 'Feature-based Knowledge Distillation',
     description: 'Developing an advanced knowledge distillation framework that transfers rich hierarchical features from CNN-based teacher models to lightweight Transformer-based student models.',
     imageUrl: '/photo/KD.jpg',
@@ -163,7 +163,7 @@ export const RESEARCH_DATA: Project[] = [
     link: '#'
   },
   {
-  id: 'proj5',
+  id: 'res-5',
   title: 'Quantization for Inference Acceleration',
   description: 'FP32-to-INT8 Quantization of ONNX Models for Latency Reduction on Edge/Inference Hardware.',
   imageUrl: '/photo/quantization.jpg',
@@ -171,7 +171,7 @@ export const RESEARCH_DATA: Project[] = [
   link: '/photo/[HMG]quantization.pdf/'
   },
   {
-  id: 'proj6',
+  id: 'res-6',
   title: 'Synthetic Data Augmentation for Real-World Model Performance',
   description: 'This study investigates whether synthetic data can serve as a viable alternative or complement to real-world data in model training.',
   imageUrl: '/photo/synthetic.jpg',
@@ -288,7 +288,7 @@ export const MEMBERS_DATA: Member[] = [
   role: 'M.S. Student',
   category: 'Students',
   imageUrl: '/photo/jihuck.jpg',
-  description: 'Focusing on Computer Vision and AI.',
+  description: 'Focusing on Computer Vision and Model Compression.',
   email: 'johnhong0624@daum.net',
   website: 'https://www.linkedin.com/in/지혁-홍-0a3693401'
        },
@@ -298,7 +298,7 @@ export const MEMBERS_DATA: Member[] = [
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/chpark.jpg',
-  description: 'Focusing on computer vision and deep learning.',
+  description: 'Focusing on Computer Vision and Efficient Learning.',
   email: 'snowscarp@naver.com',
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
@@ -369,8 +369,8 @@ export const MEMBERS_DATA: Member[] = [
     category: 'Students',
     imageUrl: '/photo/you.png',
     description: 'Focusing on Large Language Models.',
-    email: 'david.c@university.edu',
-    website: 'https://example.com/david-chen'
+    email: '',
+    website: ''
   },
     {
     id: 'm11',
@@ -379,8 +379,8 @@ export const MEMBERS_DATA: Member[] = [
     category: 'Alumni',
     imageUrl: '/photo/you.png',
     description: 'Our memeber',
-    email: 'david.c@university.edu',
-    website: 'https://example.com/david-chen'
+    email: '',
+    website: ''
   }
 ];
 
