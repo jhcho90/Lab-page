@@ -13,7 +13,7 @@ export const NEWS_DATA: NewsItem[] = [
     id: '2',
     date: '2026-08-25',
     title: 'New Research Grant Awarded(과제 선정)',
-    content: 'Our research proposal has been accepted by the National Research Foundation of Korea (NRF)!.'
+    content: 'Our research proposal has been accepted by the National Research Foundation of Korea (NRF)!'
   },
   {
     id: '1',
@@ -194,7 +194,7 @@ export const PROJECTS_DATA: Project[] = [
   id: 'proj4',
   title: 'Drone Perception under Adverse Weather Conditions',
   description: 'Physics-Guided Altitude- and Attitude-Aware Multi-Sensor Fusion for Robust Drone Perception in Adverse Weather.',
-  imageUrl: '/photo/timelapse_data.png',
+  imageUrl: '/photo/drone.jpg',
   status: 'Ongoing'
 },
   {
@@ -410,7 +410,7 @@ export const GALLERY_DATA: GalleryItem[] = [
   {
      id: 'g2',
      imageUrl: '/photo/2608yonsei.jpg',
-     event: 'Invited Seminar at Yonsei University',
+     event: 'Invited Speaker at DIML Academic Workshop, Yonsei University',
      date: '2026-08-14'
   }
   // {
