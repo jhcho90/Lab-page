@@ -401,17 +401,17 @@ export const MEMBERS_DATA: Member[] = [
 ];
 
 export const GALLERY_DATA: GalleryItem[] = [
+    {
+     id: 'g2',
+     imageUrl: '/photo/2608yonsei.jpg',
+     event: 'Invited Speaker at DIML Academic Workshop, Yonsei University',
+     date: '2026-08-14'
+  },
   {
     id: 'g1',
     imageUrl: '/photo/sinjin.jpg',
     event: 'Invited Speaker, Early-Career Researcher Session: "Physical AI," The Institute of Electronics and Information Engineers (IEIE)',
     date: '2026-06-25'
-  },
-  {
-     id: 'g2',
-     imageUrl: '/photo/2608yonsei.jpg',
-     event: 'Invited Speaker at DIML Academic Workshop, Yonsei University',
-     date: '2026-08-14'
   }
   // {
   //   id: 'g3',
