@@ -8,13 +8,13 @@ export const NEWS_DATA: NewsItem[] = [
     title: 'Paper accepted at CVPR 2024',
     content: 'Our work on efficient neural architectures has been accepted for presentation at CVPR 2024.'
   },
+    */
   {
     id: '2',
-    date: '2024-01-15',
-    title: 'New Research Grant Awarded',
-    content: 'The lab has received a major research grant from the National Science Foundation.'
+    date: '2026-08-25',
+    title: 'New Research Grant Awarded(과제 선정)',
+    content: 'Our research proposal has been accepted by the National Research Foundation of Korea (NRF)!.'
   },
-  */
   {
     id: '1',
     date: '2026-03-01',
@@ -25,6 +25,15 @@ export const NEWS_DATA: NewsItem[] = [
 ];
 
 export const PUBLICATIONS_DATA: Publication[] = [
+    {
+    id: 'p13',
+    title: 'Grid-preserving knowledge distillation: transferring convolutional inductive bias to vision transformers under data scarcity',
+    authors: ['Junyong Choi', 'Cheolhyeon Park', 'Jaehoon Cho'],
+    venue: 'arXiv',
+    year: 2026,
+    type: 'Preprint',
+    link: 'https://arxiv.org/abs/2608.10723'
+  },  
   {
     id: 'p12',
     title: 'Despeckling-Free Detector Pretraining for Speckle-Robust SAR Ship Detection',
@@ -182,6 +191,13 @@ export const RESEARCH_DATA: Project[] = [
 
 export const PROJECTS_DATA: Project[] = [
 {
+  id: 'proj4',
+  title: 'Drone Perception under Adverse Weather Conditions',
+  description: 'Physics-Guided Altitude- and Attitude-Aware Multi-Sensor Fusion for Robust Drone Perception in Adverse Weather.',
+  imageUrl: '/photo/timelapse_data.png',
+  status: 'Ongoing'
+},
+  {
   id: 'proj3',
   title: 'Real-World Time-Lapse Rainy Dataset', // 타이틀 대문자 통일
   description: 'A newly constructed dataset featuring real-world, time-lapse rainy scenes, designed to enhance model generalization in practical environments.',
@@ -390,13 +406,13 @@ export const GALLERY_DATA: GalleryItem[] = [
     imageUrl: '/photo/sinjin.jpg',
     event: 'Invited Speaker, Early-Career Researcher Session: "Physical AI," The Institute of Electronics and Information Engineers (IEIE)',
     date: '2026-06-25'
+  },
+  {
+     id: 'g2',
+     imageUrl: '/photo/2608yonsei.jpg',
+     event: 'Invited Seminar at Yonsei University',
+     date: '2026-08-14'
   }
-  // {
-  //   id: 'g2',
-  //   imageUrl: 'https://picsum.photos/seed/conf-trip/800/600',
-  //   event: 'CVPR 2024 Conference Trip in Seattle',
-  //   date: '2024-06-18'
-  // },
   // {
   //   id: 'g3',
   //   imageUrl: 'https://picsum.photos/seed/hiking/800/600',
