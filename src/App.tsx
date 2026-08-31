@@ -284,7 +284,7 @@ function AboutSection() {
               referrerPolicy="no-referrer"
             />
             <div className="absolute -bottom-6 -right-6 bg-zinc-900 text-white p-8 rounded-2xl hidden md:block">
-              <div className="text-4xl font-bold mb-1">15+</div>
+              <div className="text-4xl font-bold mb-1">3+</div>
               <div className="text-xs uppercase tracking-widest opacity-70">Active Researchers</div>
             </div>
           </div>
