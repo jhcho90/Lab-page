@@ -278,7 +278,7 @@ function AboutSection() {
           </div>
           <div className="relative">
             <img 
-              src="https://picsum.photos/seed/lab-team/800/600" 
+              src="/photo/team.jpg" 
               alt="Lab Team" 
               className="rounded-2xl shadow-xl"
               referrerPolicy="no-referrer"
