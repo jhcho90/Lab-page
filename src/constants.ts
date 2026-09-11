@@ -10,10 +10,22 @@ export const NEWS_DATA: NewsItem[] = [
   },
     */
   {
-    id: '2',
+    id: '4',
+    date: '2026-09-01',
+    title: 'Jihyuck Joins the Team!',
+    content: 'Joined as a Master\'s student. Welcome to the lab!'
+  },
+  {
+    id: '3',
     date: '2026-08-25',
     title: 'New Research Grant Awarded(과제 선정)',
     content: 'Our research proposal has been accepted by the National Research Foundation of Korea (NRF)!'
+  },
+  {
+    id: '2',
+    date: '2026-04-01',
+    title: 'New Research Partnership(과제 참여)',
+    content: 'Joining a new research initiative funded by the Institute for Information & Communications Technology Planning & Evaluation (IITP)!'
   },
   {
     id: '1',
@@ -191,11 +203,19 @@ export const RESEARCH_DATA: Project[] = [
 
 export const PROJECTS_DATA: Project[] = [
 {
-  id: 'proj4',
+  id: 'proj5',
   title: 'Drone Perception under Adverse Weather Conditions',
-  description: 'Physics-Guided Altitude- and Attitude-Aware Multi-Sensor Fusion for Robust Drone Perception in Adverse Weather.',
+  description: 'Physics-Guided Altitude- and Attitude-Aware Multi-Sensor Fusion for Robust Drone Perception in Adverse Weather. (26.09 ~ 28.08)',
   imageUrl: '/photo/drone.jpg',
-  status: 'Ongoing'
+  status: 'Ongoing' 
+},
+  {
+  id: 'proj4',
+  title: 'Development of Outdoor Smart Glasses Technology via Functional Module Restructuring',
+  description: 'Enhancing outdoor depth estimation performance for smart glasses. (26.04 ~ 28.12)',
+  imageUrl: '/photo/smartglass.png',
+  status: 'Ongoing',
+   link: 'https://johnhong06.github.io/depth-anythingv2-test1/' // Learn More용  
 },
   {
   id: 'proj3',
@@ -318,18 +338,8 @@ export const MEMBERS_DATA: Member[] = [
   email: 'snowscarp@naver.com',
   website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
-  {
-  id: 'm4',
-  name: 'Minseo Kim',
-  role: 'Intern',
-  category: 'Students',
-  imageUrl: '/photo/mskim.jpg',
-  description: 'Focusing on Vision-Language and Multi-modal Models.',
-  email: 'guykms814@naver.com',
-  website: 'https://www.linkedin.com/in/민서-김-4324a6410'
-},
    {
-  id: 'm5',
+  id: 'm4',
   name: 'Minseok Byun',
   role: 'Intern',
   category: 'Students',
@@ -339,7 +349,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
 },
      {
-  id: 'm6',
+  id: 'm5',
   name: 'Seungwon Kim',
   role: 'Intern',
   category: 'Students',
@@ -349,7 +359,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/seungwon06699418/'
 },
      {
-  id: 'm7',
+  id: 'm6',
   name: 'Seojin Hwang',
   role: 'Intern',
   category: 'Students',
@@ -359,7 +369,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
        {
-  id: 'm8',
+  id: 'm7',
   name: 'Keunchang Tong',
   role: 'Intern',
   category: 'Students',
@@ -369,7 +379,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
   {
-  id: 'm9',
+  id: 'm8',
   name: 'Dowon Kim',
   role: 'Intern',
   category: 'Students',
@@ -379,7 +389,7 @@ export const MEMBERS_DATA: Member[] = [
   website: 'https://www.linkedin.com/in/김도원-kevin0205'
        },
   {
-    id: 'm10',
+    id: 'm9',
     name: 'This could be you!',
     role: 'PhD Student',
     category: 'Students',
@@ -389,7 +399,7 @@ export const MEMBERS_DATA: Member[] = [
     website: ''
   },
     {
-    id: 'm11',
+    id: 'm10',
     name: 'Alumni',
     role: 'PhD Student',
     category: 'Alumni',
@@ -401,6 +411,12 @@ export const MEMBERS_DATA: Member[] = [
 ];
 
 export const GALLERY_DATA: GalleryItem[] = [
+  {
+     id: 'g3',
+     imageUrl: '/photo/260910_dinner.jpg',
+     event: 'Joint lab dinner with Prof. Ryu\'s group!',
+     date: '2026-09-10'
+  },
     {
      id: 'g2',
      imageUrl: '/photo/2608yonsei.jpg',
