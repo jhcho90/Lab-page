@@ -223,55 +223,66 @@ function AboutSection() {
         </div>
       </div>
       
-     {/* News Section */}
+  {/* News Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-6">
           <h2 className="text-3xl font-display font-bold">Latest News</h2>
           <div className="h-px flex-grow mx-8 bg-zinc-200 hidden md:block"></div>
         </div>
 
-        <div className="space-y-2">
-          {NEWS_DATA.map((news) => (
-            <div 
-              key={news.id} 
-              className={`flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 p-3 rounded-xl transition-colors border-b border-zinc-100 last:border-none ${
-                news.isHighlight 
-                  ? 'bg-blue-50/60 border-blue-100' 
-                  : 'hover:bg-zinc-50'
-              }`}
-            >
-              {/* 날짜 */}
-              <div className={`w-32 shrink-0 font-mono text-sm font-bold ${
-                news.isHighlight ? 'text-blue-600' : 'text-zinc-900'
-              }`}>
-                {news.date}
-              </div>
+        {/* 간격을 좁히기 위해 space-y-2를 space-y-1로 변경 */}
+        <div className="space-y-1">
+          {/* isPinned가 true인 항목을 최상단으로 우선 정렬 */}
+          {[...NEWS_DATA]
+            .sort((a, b) => (b.isPinned ? 1 : 0) - (a.isPinned ? 1 : 0))
+            .map((news) => (
+              <div 
+                key={news.id} 
+                /* py-2 px-3으로 패딩을 축소하여 위아래 간격을 컴팩트하게 조절 */
+                className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-2 px-3 rounded-lg transition-colors border-b border-zinc-100 last:border-none ${
+                  news.isHighlight 
+                    ? 'bg-blue-50/60 border-blue-100' 
+                    : 'hover:bg-zinc-50'
+                }`}
+              >
+                {/* 날짜 또는 PINNED 배지 (text-base 크기 기준 맞춤) */}
+                <div className="w-32 shrink-0 font-mono text-base font-bold flex items-center">
+                  {news.isPinned ? (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-blue-600 text-white shadow-sm">
+                      📌 PINNED
+                    </span>
+                  ) : (
+                    <span className={news.isHighlight ? 'text-blue-600' : 'text-zinc-900'}>
+                      {news.date}
+                    </span>
+                  )}
+                </div>
 
-              {/* 제목 및 내용 */}
-              <div className="flex-grow text-sm text-zinc-700 leading-relaxed">
-                <span className={`font-bold mr-2 ${
-                  news.isHighlight ? 'text-blue-700' : 'text-zinc-900'
-                }`}>
-                  {news.title}
-                </span>
-                
-                {news.content && <span className="text-zinc-600">- {news.content}</span>}
-                
-                {news.link && news.link !== '#' && (
-                  <a 
-                    href={news.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className={`ml-2 inline-flex items-center text-xs font-semibold hover:underline ${
-                      news.isHighlight ? 'text-blue-600' : 'text-zinc-900'
-                    }`}
-                  >
-                    [Link]
-                  </a>
-                )}
+                {/* 제목 및 내용 (글자 크기를 text-base로 키우고 세로 정렬 감싸기) */}
+                <div className="flex-grow text-base text-zinc-700 leading-snug">
+                  <span className={`font-bold mr-2 ${
+                    news.isHighlight ? 'text-blue-700' : 'text-zinc-900'
+                  }`}>
+                    {news.title}
+                  </span>
+                  
+                  {news.content && <span className="text-zinc-600">- {news.content}</span>}
+                  
+                  {news.link && news.link !== '#' && (
+                    <a 
+                      href={news.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={`ml-2 inline-flex items-center text-sm font-semibold hover:underline ${
+                        news.isHighlight ? 'text-blue-600' : 'text-zinc-900'
+                      }`}
+                    >
+                      [Link]
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
 
