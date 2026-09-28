@@ -412,6 +412,12 @@ export const MEMBERS_DATA: Member[] = [
 
 export const GALLERY_DATA: GalleryItem[] = [
   {
+     id: 'g4',
+     imageUrl: '/photo/26CHOSHOW.jpg',
+     event: 'Invited Speaker, Autonomous Perception & Flight Session by ICAD (Innovation Consortium for Aviation and Drone)',
+     date: '2026-09-18'
+  },
+  {
      id: 'g3',
      imageUrl: '/photo/260910_dinner.jpg',
      event: 'Joint lab dinner with Prof. Ryu\'s group!',
