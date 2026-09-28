@@ -222,34 +222,7 @@ function AboutSection() {
           ))}
         </div>
       </div>
-/*
-      {/* News Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-display font-bold">Latest News</h2>
-          <div className="h-px flex-grow mx-8 bg-zinc-200 hidden md:block"></div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {NEWS_DATA.map((news) => (
-            <div key={news.id} className="group cursor-pointer">
-              <div className="text-xs font-mono text-zinc-400 mb-2">{news.date}</div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-zinc-600 transition-colors">{news.title}</h3>
-              <p className="text-zinc-600 text-sm leading-relaxed line-clamp-3">
-                {news.content}
-              </p>
-              <a 
-                href={news.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-zinc-600 transition-colors"
-              >
-                Read More <ChevronRight size={14} className="ml-1" />
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-*/
+      
       {/* News Section */}
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="flex items-center justify-between mb-8">
