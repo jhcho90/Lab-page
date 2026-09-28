@@ -406,7 +406,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'PhD Student',
     category: 'Alumni',
     imageUrl: '/photo/you.png',
-    description: 'Our memeber',
+    description: 'Our member',
     email: '',
     website: ''
   }
