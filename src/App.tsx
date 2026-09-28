@@ -619,17 +619,15 @@ function MembersSection() {
             <h2 className="text-2xl font-display font-bold shrink-0">Alumni</h2>
             <div className="h-px bg-zinc-200 flex-grow" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* MemberCard를 사용하여 얼굴 사진과 상세 프로필이 나오도록 수정 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {alumni.map((member) => (
-              <div key={member.id} className="text-center p-6 bg-zinc-50 rounded-2xl border border-zinc-100">
-                <h3 className="font-bold text-zinc-900">{member.name}</h3>
-                <p className="text-xs text-zinc-500 mb-2">{member.role}</p>
-                <p className="text-sm text-zinc-600 italic">Current: {member.description}</p>
-              </div>
+              <MemberCard key={member.id} member={member} />
             ))}
           </div>
         </section>
       )}
+      //
     </div>
   );
 }
