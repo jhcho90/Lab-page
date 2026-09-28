@@ -34,6 +34,7 @@ export const NEWS_DATA: NewsItem[] = [
     content: 'We are looking for students to work with! Please send an email to the professor. (jh.cho at kau.ac.kr)',
     link: '/photo/AIMS_apply.pdf/',
     isHighlight: true, // ⭐ 파란색으로 강조할 뉴스!
+    isPinned: true, // ⭐ 맨 위 상시 고정 설정
   }
 ];
 
