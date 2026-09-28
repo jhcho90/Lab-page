@@ -30,7 +30,7 @@ export const NEWS_DATA: NewsItem[] = [
   {
     id: '1',
     date: '2026-03-01',
-    title: 'Recruiting new members!(연구생 모집)',
+    title: 'Recruiting new members!(연구생/석/박사 모집)',
     content: 'We are looking for students to work with! Please send an email to the professor. (jh.cho at kau.ac.kr)',
     link: '/photo/AIMS_apply.pdf/',
     isHighlight: true, // ⭐ 파란색으로 강조할 뉴스!
@@ -406,7 +406,7 @@ export const MEMBERS_DATA: Member[] = [
     role: 'PhD Student',
     category: 'Alumni',
     imageUrl: '/photo/you.png',
-    description: 'Our member',
+    description: 'Affiliation',
     email: '',
     website: ''
   }
