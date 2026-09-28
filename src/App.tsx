@@ -222,7 +222,7 @@ function AboutSection() {
           ))}
         </div>
       </div>
-
+/*
       {/* News Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
@@ -249,7 +249,45 @@ function AboutSection() {
           ))}
         </div>
       </div>
+*/
+      {/* News Section */}
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="flex items-center justify-between mb-8">
+    <h2 className="text-3xl font-display font-bold">Latest News</h2>
+    <div className="h-px flex-grow mx-8 bg-zinc-200 hidden md:block"></div>
+  </div>
 
+  {/* 세로 리스트형 레이아웃 */}
+  <div className="space-y-4">
+    {NEWS_DATA.map((news) => (
+      <div key={news.id} className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-2 border-b border-zinc-100 last:border-none">
+        {/* 날짜 (왼쪽 고정 폭) */}
+        <div className="w-32 shrink-0 font-mono text-sm font-bold text-zinc-900">
+          {news.date}
+        </div>
+
+        {/* 제목 및 내용 (오른쪽 한 줄 나열) */}
+        <div className="flex-grow text-sm text-zinc-700 leading-relaxed">
+          <span className="font-bold text-zinc-900 mr-2">{news.title}</span>
+          {news.content && <span className="text-zinc-600">- {news.content}</span>}
+          
+          {news.link && news.link !== '#' && (
+            <a 
+              href={news.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="ml-2 inline-flex items-center text-xs font-semibold text-zinc-900 hover:underline"
+            >
+              [Link]
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+      
       {/* About Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white rounded-3xl shadow-sm border border-zinc-100">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
