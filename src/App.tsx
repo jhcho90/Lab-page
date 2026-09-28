@@ -627,7 +627,6 @@ function MembersSection() {
           </div>
         </section>
       )}
-      //
     </div>
   );
 }
