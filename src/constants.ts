@@ -350,17 +350,17 @@ export const MEMBERS_DATA: Member[] = [
   email: 'conantong1110@gmail.com',
   website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
-   {
-  id: 'm4',
-  name: 'Minseok Byun',
+       {
+  id: 'm6',
+  name: 'Seojin Hwang',
   role: 'Intern',
   category: 'Students',
-  imageUrl: '/photo/bmseok.gif',
+  imageUrl: '/photo/seojin.jpg',
   description: 'Focusing on Computer Vision and Physical AI.',
-  email: 'bms6576@naver.com',
-  website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
+  email: 'yolam0125@gmail.com',
+  website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
 },
-     {
+       {
   id: 'm5',
   name: 'Seungwon Kim',
   role: 'Intern',
@@ -370,15 +370,15 @@ export const MEMBERS_DATA: Member[] = [
   email: 'seungwon00038@gmail.com',
   website: 'https://www.linkedin.com/in/seungwon06699418/'
 },
-     {
-  id: 'm6',
-  name: 'Seojin Hwang',
+   {
+  id: 'm4',
+  name: 'Minseok Byun',
   role: 'Intern',
   category: 'Students',
-  imageUrl: '/photo/seojin.jpg',
+  imageUrl: '/photo/bmseok.gif',
   description: 'Focusing on Computer Vision and Physical AI.',
-  email: 'yolam0125@gmail.com',
-  website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
+  email: 'bms6576@naver.com',
+  website: 'https://www.linkedin.com/in/%EB%AF%BC%EC%84%9D-%EB%B3%80-580478411/'
 },
   {
     id: 'm9',
