@@ -326,7 +326,7 @@ export const MEMBERS_DATA: Member[] = [
   role: 'M.S. Student',
   category: 'Students',
   imageUrl: '/photo/jihuck.jpg',
-  description: 'Focusing on Computer Vision and Model Compression.',
+  description: 'Focusing on Real-Time VLM (Vision-Language Model).',
   email: 'johnhong0624@daum.net',
   website: 'https://www.linkedin.com/in/지혁-홍-0a3693401'
        },
@@ -336,10 +336,20 @@ export const MEMBERS_DATA: Member[] = [
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/dowonkim.png',
-  description: 'Focusing on Computer Vision and AI.',
+  description: 'Focusing on UAV Perception under Adverse Weather Conditions.',
   email: 'kevin020508@naver.com',
   website: 'https://www.linkedin.com/in/김도원-kevin0205'
        },
+         {
+  id: 'm7',
+  name: 'Keunchang Tong',
+  role: 'Intern',
+  category: 'Students',
+  imageUrl: '/photo/keunchang.jpg',
+  description: 'Focusing on AI Model Optimization.',
+  email: 'conantong1110@gmail.com',
+  website: 'https://www.linkedin.com/in/근창-동-67693941b'
+},
    {
   id: 'm4',
   name: 'Minseok Byun',
@@ -356,7 +366,7 @@ export const MEMBERS_DATA: Member[] = [
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/seungwon.jpg',
-  description: 'Focusing on Computer Vision and AI.',
+  description: 'Focusing on Computer Vision and Physical AI.',
   email: 'seungwon00038@gmail.com',
   website: 'https://www.linkedin.com/in/seungwon06699418/'
 },
@@ -366,19 +376,9 @@ export const MEMBERS_DATA: Member[] = [
   role: 'Intern',
   category: 'Students',
   imageUrl: '/photo/seojin.jpg',
-  description: 'Focusing on Computer Vision and AI.',
+  description: 'Focusing on Computer Vision and Physical AI.',
   email: 'yolam0125@gmail.com',
   website: 'https://www.linkedin.com/in/서진-황-523859419?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
-},
-       {
-  id: 'm7',
-  name: 'Keunchang Tong',
-  role: 'Intern',
-  category: 'Students',
-  imageUrl: '/photo/keunchang.jpg',
-  description: 'Focusing on Computer Vision and Quantization.',
-  email: 'conantong1110@gmail.com',
-  website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
   {
     id: 'm9',
