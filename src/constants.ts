@@ -332,14 +332,14 @@ export const MEMBERS_DATA: Member[] = [
        },
   {
   id: 'm3',
-  name: 'Cheolhyeon Park',
+  name: 'Dowon Kim',
   role: 'Intern',
   category: 'Students',
-  imageUrl: '/photo/chpark.jpg',
-  description: 'Focusing on Computer Vision and Efficient Learning.',
-  email: 'snowscarp@naver.com',
-  website: 'https://www.linkedin.com/in/cheolhyeon-park-693248400?utm_source=share_via&utm_content=profile&utm_medium=member_ios'
-},
+  imageUrl: '/photo/dowonkim.png',
+  description: 'Focusing on Computer Vision and AI.',
+  email: 'kevin020508@naver.com',
+  website: 'https://www.linkedin.com/in/김도원-kevin0205'
+       },
    {
   id: 'm4',
   name: 'Minseok Byun',
@@ -380,16 +380,6 @@ export const MEMBERS_DATA: Member[] = [
   email: 'conantong1110@gmail.com',
   website: 'https://www.linkedin.com/in/근창-동-67693941b'
 },
-  {
-  id: 'm8',
-  name: 'Dowon Kim',
-  role: 'Intern',
-  category: 'Students',
-  imageUrl: '/photo/dowonkim.png',
-  description: 'Focusing on Computer Vision and AI.',
-  email: 'kevin020508@naver.com',
-  website: 'https://www.linkedin.com/in/김도원-kevin0205'
-       },
   {
     id: 'm9',
     name: 'This could be you!',
